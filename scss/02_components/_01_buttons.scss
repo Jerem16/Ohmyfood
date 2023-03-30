@@ -1,5 +1,33 @@
 /****** [Buttons] ******/
 
 .btn {
-
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.local_style_gradient {
+  position: relative;
+  z-index: 1;
+  /* Shadow/Button */
+  border-radius: 25px;
+  @include font_button_gradient;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background: $bg_linear-gradient;
+  cursor: pointer;
+  &:hover {
+    &::after {
+      opacity: 1;
+      background-color: white;
+      transition: all 400ms;
+    }
+  }
+  &::after {
+    @include pseudo-pos;
+    border-radius: 25px;
+    z-index: -1;
+    opacity: 0;
+    background: $bg_linear-gradient--hover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    transition: all 450ms;
+  }
 }

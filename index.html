@@ -2,35 +2,149 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New_Project</title>
+    <title>OhMyFood | Paris</title>
+    <link
+      rel="icon"
+      href="./assets/img/ico_logo_Ohmyfood.png"
+      sizes="256x256"
+    />
+    <link
+      rel="icon"
+      href="./assets/img/ico_logo_Ohmyfood.svg"
+      type="image/svg+xml"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./public/css/000_normalize" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/00_normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./scss/main.css" />
-    <script src="https://kit.fontawesome.com/98008fddce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/maquette_demo.css" />
+
+    <script
+      src="https://kit.fontawesome.com/98008fddce.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="main_container">
-      <div class="margin-flex">
-        <!-- HEADER -->
+    <div class="wrapper">
+      <!-- HEADER -->
 
-        <header class="full-heading">
-          <nav class="nav"></nav>
-        </header>
+      <header class="full-heading flex-row_jac-ctr">
+        <a href="./index.html" class="hidden full-heading__return"
+          ><i class="fa-solid fa-arrow-left"></i
+        ></a>
+        <a href="#"
+          ><img
+            class="full-heading__logo"
+            src="./assets/img/logo/ohmyfood.png"
+            srcset="
+              ./assets/img/logo/ohmyfood.png,
+              ./assets/img/logo/ohmyfood@2x.svg
+            "
+            alt="ico_logo_Ohmyfood"
+        /></a>
+      </header>
 
-        <!-- MAIN -->
+      <!-- LOCATION -->
 
-        <main></main>
+      <section class="search-location flex-row_jac-ctr">
+        <div class="x"></div>
+        <form
+          class="search-button"
+          action="https://www.ville-guebwiller.fr/wp-content/uploads/2018/09/en-cours-de-construction.png"
+          method="get"
+          target="_blank"
+        >
+          <label for="research"><span class="hidden">research</span></label>
+          <button
+            class="ico_location"
+            aria-label="position"
+            type="submit"
+            formaction="https://www.google.com/maps/place/Belleville,+75020+Paris/@48.8711841,2.3844931,17z"
+          >
+            <i
+              class="fa-sharp fa-solid fa-location-dot black"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <input
+            class="input-research"
+            type="search"
+            name="research"
+            aria-label="Search"
+            id="research"
+            placeholder=""
+            value="Paris, Belleville"
+          />
+        </form>
+      </section>
 
-        <!-- FOOTER -->
+      <!-- PRESENTATION -->
 
-        <footer></footer>
-      </div>
+      <section class="flex-col_jac-ctr presentation">
+        <h1 class="font_h1">Réservez le menu qui vous convient</h1>
+        <p class="font_h1_p">
+          Découvrez des restaurants d’exception, sélectionnés par nos soins.
+        </p>
+        <a href="#restaurants">
+          <button
+            class="btn local_style_gradient bx-sz_restaurants"
+            aria-label="restaurants"
+            type="button"
+          >
+            Explorer nos restaurants
+          </button></a
+        >
+      </section>
+
+      <!-- NAVIGATION -->
+
+      <section class="fonctionnement">
+        <h2 class="font_h2_acceuil">Fonctionnement</h2>
+        <nav class="nav">
+          <div class="nav_block">
+            <div class="nav_num"><p>1</p></div>
+            <a class="nav_content">
+              <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+              Choisissez un restaurant
+            </a>
+          </div>
+
+          <div class="nav_block">
+            <div class="nav_num"><p>2</p></div>
+            <a class="nav_content">
+              <i class="fa-solid fa-list-ul"></i>
+              Composez votre menu
+            </a>
+          </div>
+
+          <div class="nav_block">
+            <div class="nav_num"><p>3</p></div>
+            <a class="nav_content">
+              <i class="fa-solid fa-store"></i>
+              Dégustez au restaurant
+            </a>
+          </div>
+        </nav>
+      </section>
+      <!-- MAIN -->
+
+      <main></main>
+
+      <!-- FOOTER -->
+
+      <footer></footer>
     </div>
   </body>
 </html>

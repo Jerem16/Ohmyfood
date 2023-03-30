@@ -1,1 +1,63 @@
 /****** Fonts ******/
+
+@mixin font_logo {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+/***********************/
+@mixin font_location {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+/********************/
+@mixin font_presentation_h1 {
+  font-weight: 700;
+  text-align: center;
+  /* Mobile-mod*/
+  font-size: 24px;
+  line-height: 28px;
+  /* Desktop-mod*/
+  //   font-size: 40px;
+  //   line-height: 47px;
+}
+
+@mixin font_presentation_h1_p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: $color-location-font;
+}
+@mixin font_button_gradient {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $color-white;
+}
+/***********************/
+@mixin font_h2_acceuil {
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin font_nav_num {
+  font-weight: 500;
+  font-size: 14.1818px;
+  line-height: 17px;
+  color: #f7f7f7;
+}
+
+@mixin font_nav_acceuil {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

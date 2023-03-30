@@ -1,0 +1,131 @@
+/****** [ Accueil N°1 search-location  ] ******/
+.search-location {
+  width: 100%;
+  height: 50px;
+  background-color: $bg-color-localization;
+  color: $color-location-font;
+  position: relative;
+
+  form {
+    .ico_location,
+    input {
+      border: none;
+      outline: none;
+      transition: all 450ms;
+    }
+    &:hover > .ico_location {
+      @include box-shadow(rgba(0, 0, 0, 0.15));
+    }
+    .input-research {
+      position: relative;
+      top: -0.25px;
+      width: 150px;
+      padding: 7.75px 8px 6px 8px;
+      background-color: transparent;
+      @include bord-rad_input-research;
+      /*Animation*/
+      @include box-shadow(inset rgba(0, 0, 0, 0));
+      &:hover {
+        transition: all 450ms;
+        @include box-shadow(inset rgba(0, 0, 0, 0.15));
+        color: $color-location-font;
+        cursor: auto;
+        background: white;
+      }
+    }
+    button,
+    button + input {
+      @include font_location;
+      @include box-shadow(rgba(0, 0, 0, 0));
+      &:hover + input,
+      &:hover {
+        color: transparent;
+        background: $anime_linear-gradient;
+        background-clip: text;
+        z-index: 9;
+        cursor: pointer;
+        @include box-shadow(rgba(0, 0, 0, 0.15));
+        background-size: 600px 200px;
+        animation: gradient_move 10000ms ease-in-out infinite alternate-reverse;
+      }
+
+    }
+    .ico_location {
+      transform: scaleY(1.01);
+      position: relative;
+      display: inline-block;
+      padding: 7px 10px 7px 9px;
+      top: -1px;
+      background-color: transparent;
+      margin-right: -5px;
+      margin-left: -4.5px;
+      @include bord-rad_ico_location;
+
+      transition: all 300ms;
+      &:hover {
+        animation: ico-location 330ms ease-in-out forwards;
+      }
+      &:active {
+        transform: scaleY(1.011) scaleX(1.011);
+
+        color: lightness-shift($color-white);
+        background: $anime_linear-gradient;
+        background-size: 400% 400%;
+        background-clip: border-box;
+        transition: all 30ms;
+        @include text-shadow(rgba(0, 0, 0, 0.35));
+        animation: gradient_move 5000ms ease-in-out infinite alternate-reverse;
+      }
+    }
+  }
+}
+@keyframes ico-location {
+  0% {
+    color: $color-primary;
+    background: $bg-color-localization;
+    animation-timing-function: ease-in-out;
+    background-clip: border-box;
+    background-position: 0% 50%;
+  }
+  39% {
+    color: $color-location-font;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    color: lightness-shift($color-location-font);
+    background: lightness-shift($bg-color-localization);
+    opacity: 1;
+    background-position: 100% 50%;
+  }
+
+  61% {
+    color: $color-location-font;
+    animation-timing-function: ease-in-out;
+  }
+  70% {
+    background-clip: border-box;
+  }
+  70% {
+    color: $color-primary;
+    background: $bg-color-localization;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  100% {
+    color: transparent;
+    background: $bg_linear-gradient;
+    background-clip: text;
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

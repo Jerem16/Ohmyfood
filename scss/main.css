@@ -1,5 +1,318 @@
 @charset "UTF-8";
-/****** [General] ******/ /****** Fonts ******/ /****** [Styles] ******/ /****** [Buttons] ******/ /****** [Form] ******/ /****** [Header] ******/ /****** [Nav] ******/ /****** [Main] ******/ /****** [Footer] ******/ /****** [ Pages N° ] ******/ /****** [ Pages N° ] ******/ /****** [ Pages N° ] ******/ /****** [ Pages N° ] ******/ /****** --Media queries-- ******/
+/*** Background ***/
+/*** Fonts ***/ /*** Border-raduis ***/
+/*
+@mixin border($colour: $colour-primary) {
+  border: 0.1rem solid $colour;
+}
+/*** Animation::after ***/
+/****** [General] ******/
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+html {
+  background-color: blue;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  min-width: 320px;
+  height: 500vh;
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****** Fonts ******/
+/***********************/
+/********************/
+/***********************/
+/****** [Styles] ******/ /****** [Buttons] ******/
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.local_style_gradient {
+  position: relative;
+  z-index: 1;
+  /* Shadow/Button */
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  cursor: pointer;
+}
+.local_style_gradient:hover::after {
+  opacity: 1;
+  background-color: white;
+  transition: all 400ms;
+}
+.local_style_gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(193.33deg, rgba(147, 86, 220, 0.8980392157) -11.44%, rgba(255, 121, 218, 0.8980392157) 123.93%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  transition: all 450ms;
+}
+
+/****** [Form] ******/ /****** [Styles] ******/
+.flex-row_jac-ctr {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col_jac-ctr {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+/****** [Header] ******/
+.full-heading {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 63px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.full-heading__logo {
+  width: 163.5px;
+  height: 44px;
+  padding-top: 13px;
+  padding-right: 1px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.full-heading__return {
+  position: absolute;
+  left: 0;
+  padding-left: 23px;
+  padding-top: 5px;
+  font-size: 1.22em;
+  max-width: 17px;
+  color: #101010;
+}
+
+/****** [Nav] ******/ /****** [Footer] ******/ /****** [ Accueil N°1 search-location  ] ******/
+.search-location {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  color: #353535;
+  position: relative;
+}
+.search-location form .ico_location,
+.search-location form input {
+  border: none;
+  outline: none;
+  transition: all 450ms;
+}
+.search-location form:hover > .ico_location {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.search-location form .input-research {
+  position: relative;
+  top: -0.25px;
+  width: 150px;
+  padding: 7.75px 8px 6px 8px;
+  background-color: transparent;
+  border-radius: 0px 10px 10px 0px;
+  /*Animation*/
+  box-shadow: 0px 2px 4px inset rgba(0, 0, 0, 0);
+}
+.search-location form .input-research:hover {
+  transition: all 450ms;
+  box-shadow: 0px 2px 4px inset rgba(0, 0, 0, 0.15);
+  color: #353535;
+  cursor: auto;
+  background: white;
+}
+.search-location form button,
+.search-location form button + input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+}
+.search-location form button:hover + input, .search-location form button:hover,
+.search-location form button + input:hover + input,
+.search-location form button + input:hover {
+  color: transparent;
+  background: linear-gradient(90deg, #9356dc, #ff79da, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  z-index: 9;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  background-size: 600px 200px;
+  animation: gradient_move 10000ms ease-in-out infinite alternate-reverse;
+}
+.search-location form .ico_location {
+  transform: scaleY(1.01);
+  position: relative;
+  display: inline-block;
+  padding: 7px 10px 7px 9px;
+  top: -1px;
+  background-color: transparent;
+  margin-right: -5px;
+  margin-left: -4.5px;
+  border-radius: 10px 0px 0px 10px;
+  transition: all 300ms;
+}
+.search-location form .ico_location:hover {
+  animation: ico-location 330ms ease-in-out forwards;
+}
+.search-location form .ico_location:active {
+  transform: scaleY(1.011) scaleX(1.011);
+  color: #e6e6e6;
+  background: linear-gradient(90deg, #9356dc, #ff79da, #9356dc, #ff79da);
+  background-size: 400% 400%;
+  background-clip: border-box;
+  transition: all 30ms;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
+  animation: gradient_move 5000ms ease-in-out infinite alternate-reverse;
+}
+
+@keyframes ico-location {
+  0% {
+    color: #9356dc;
+    background: #eaeaea;
+    animation-timing-function: ease-in-out;
+    background-clip: border-box;
+    background-position: 0% 50%;
+  }
+  39% {
+    color: #353535;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    color: #4f4f4f;
+    background: #d1d1d1;
+    opacity: 1;
+    background-position: 100% 50%;
+  }
+  61% {
+    color: #353535;
+    animation-timing-function: ease-in-out;
+  }
+  70% {
+    background-clip: border-box;
+  }
+  70% {
+    color: #9356dc;
+    background: #eaeaea;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  100% {
+    color: transparent;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/****** [ Accueil N°2 Presentation ] ******/
+.presentation {
+  width: 100%;
+  height: 287px;
+  margin: auto;
+}
+.presentation .local_style_gradient {
+  margin-top: 30.75px;
+}
+.presentation .bx-sz_restaurants {
+  display: block;
+  width: 218px;
+  height: 50px;
+  margin-left: 7px;
+}
+
+.font_h1 {
+  font-weight: 700;
+  text-align: center;
+  /* Mobile-mod*/
+  font-size: 24px;
+  line-height: 28px;
+  /* Desktop-mod*/
+  margin: 39px 58px 0 42px;
+  padding: 0;
+  letter-spacing: -0.5px;
+}
+
+.font_h1_p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #353535;
+  padding: 0;
+  margin: 12px 26px 0px 34px;
+}
+
+/****** [ Accueil N°3 Fonctionnement  ] ******/
+.font_h2_acceuil {
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/****** [ Pages N° ] ******/ /****** --Media queries-- ******/
 /***!! [--375px--] ****/
 /***!! Clearing-inf: 375px ****/
 /****** --Media queries-- ******/
@@ -8,4 +321,21 @@
 /****** --Media queries-- ******/
 /***!! [--1440px--] ****/
 /***!! Clearing-inf:1440px ****/
-/****** [ Animation ] ******/ /****** [ Slider ] ******//*# sourceMappingURL=main.css.map */
+/****** [ Animation ] ******/
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+background: linear-gradient(200.64deg, #9356dc, #ff79da);
+background-size: 400% 400%;
+animation: gradient_move 7500ms ease infinite;
+*/
+/****** [ Slider ] ******//*# sourceMappingURL=main.css.map */

@@ -10,14 +10,15 @@
 @import "./02_components/01_buttons";
 @import "./02_components/02_form";
 
+@import "./03_styles/style_container";
+
 @import "./04_layout/00_header";
 @import "./04_layout/01_nav";
-@import "./04_layout/02_main_section-";
 @import "./04_layout/99_footer";
 
-@import "./05_pages/01_page";
-@import "./05_pages/02_page";
-@import "./05_pages/03_page";
+@import "./05_pages/01_Accueil_1-search-location";
+@import "./05_pages/01_Accueil_2-presentation";
+@import "./05_pages/01_Accueil_3-nav";
 @import "./05_pages/04_page";
 @import "./05_pages/05_page";
 @import "./05_pages/06_page";
@@ -33,4 +34,3 @@
 
 @import "./101_slider/01_slider";
 // npm run sass
-

@@ -1,1 +1,18 @@
 /****** [ Animation ] ******/
+
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+background: linear-gradient(200.64deg, #9356dc, #ff79da);
+background-size: 400% 400%;
+animation: gradient_move 7500ms ease infinite;
+*/
