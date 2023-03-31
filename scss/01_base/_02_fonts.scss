@@ -44,20 +44,45 @@
 /***********************/
 @mixin font_h2_acceuil {
   font-weight: 700;
-  text-align: center;
   font-size: 24px;
   line-height: 28px;
+  letter-spacing: -0.5px;
 }
 
 @mixin font_nav_num {
   font-weight: 500;
-  font-size: 14.1818px;
+  font-size: 14px;
   line-height: 17px;
   color: #f7f7f7;
 }
+/***********************/
+/*
+@mixin font_h2_acceuil {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+  */
 
-@mixin font_nav_acceuil {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+@mixin card_restaurants-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+}
+@mixin card_restaurants-description {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+}
+/***********************/
+
+@mixin footer_logo {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-white;
 }

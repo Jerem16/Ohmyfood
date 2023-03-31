@@ -41,7 +41,10 @@
       <!-- HEADER -->
 
       <header class="full-heading flex-row_jac-ctr">
-        <a href="./index.html" class="hidden full-heading__return"
+        <a
+          href="./index.html"
+          aria-label="main_return"
+          class="hidden full-heading__return"
           ><i class="fa-solid fa-arrow-left"></i
         ></a>
         <a href="#"
@@ -59,7 +62,7 @@
       <!-- LOCATION -->
 
       <section class="search-location flex-row_jac-ctr">
-        <div class="x"></div>
+        <h2 class="hidden">search-location</h2>
         <form
           class="search-button"
           action="https://www.ville-guebwiller.fr/wp-content/uploads/2018/09/en-cours-de-construction.png"
@@ -97,41 +100,38 @@
         <p class="font_h1_p">
           Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </p>
-        <a href="#restaurants">
-          <button
-            class="btn local_style_gradient bx-sz_restaurants"
-            aria-label="restaurants"
-            type="button"
-          >
-            Explorer nos restaurants
-          </button></a
+        <a
+          href="#restaurants"
+          class="btn local_style_gradient bx-sz_btn_go-restaurants"
         >
+          Explorer nos restaurants
+        </a>
       </section>
 
       <!-- NAVIGATION -->
 
-      <section class="fonctionnement">
+      <section class="fonctionnement flex-col_jac-ctr">
         <h2 class="font_h2_acceuil">Fonctionnement</h2>
         <nav class="nav">
-          <div class="nav_block">
-            <div class="nav_num"><p>1</p></div>
+          <div class="nav_block flex-row_jac-ctr">
             <a class="nav_content">
+              <div class="nav_num"><p class="num">1</p></div>
               <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
               Choisissez un restaurant
             </a>
           </div>
 
           <div class="nav_block">
-            <div class="nav_num"><p>2</p></div>
             <a class="nav_content">
+              <div class="nav_num"><p class="num">2</p></div>
               <i class="fa-solid fa-list-ul"></i>
               Composez votre menu
             </a>
           </div>
 
           <div class="nav_block">
-            <div class="nav_num"><p>3</p></div>
             <a class="nav_content">
+              <div class="nav_num"><p class="num">3</p></div>
               <i class="fa-solid fa-store"></i>
               Dégustez au restaurant
             </a>
@@ -140,11 +140,109 @@
       </section>
       <!-- MAIN -->
 
-      <main></main>
+      <main>
+        <section class="restaurant">
+          <h2 class="font_h2_restaurants">Restaurants</h2>
+
+          <div class="grid_restaurant">
+            <article class="card_restaurants">
+              <div class="img_restaurant"></div>
+              <div class="card_restaurants_title">
+                <h3 class="card_title">La palette du goût</h3>
+                <div class="like">
+                  <img
+                    src="./assets/img/cache_marie_heart.svg"
+                    alt="cache_marie_heart"
+                  />
+                  <form method="get" action="#">
+                    <label class="custom-checkbox" for="like">
+                      <input type="checkbox" name="like" id="like" />
+                      <i class="fa-sharp fa-solid fa-heart unchecked">
+                        <span class="x"></span>
+                      </i>
+                      <i class="fa-sharp fa-solid fa-heart checked">
+                        <span class="x"></span>
+                      </i>
+                      <span class="hidden">like</span>
+                    </label>
+                  </form>
+                </div>
+                <p class="card_description">Ménilmontant</p>
+              </div>
+            </article>
+
+            <article class="card_restaurants">
+              <div class="img_restaurant"></div>
+              <div class="card_restaurants_title">
+                <h3 class="card_title">La note enchantée</h3>
+                <div class="like">
+                  <img
+                    src="./assets/img/cache_marie_heart.svg"
+                    alt="cache_marie_heart"
+                  />
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <i class="fa-sharp fa-solid fa-heart unchecked"
+                      ><span class="x"></span
+                    ></i>
+                    <i class="fa-sharp fa-solid fa-heart checked"><span class="x"></span></i>
+                    <span class="hidden">like</span>
+                  </label>
+                </div>
+                <p class="card_description">Charonne</p>
+              </div>
+            </article>
+
+            <article class="card_restaurants">
+              <div class="img_restaurant"></div>
+              <div class="card_restaurants_title">
+                <h3 class="card_title">À la française</h3>
+                <div class="like">
+                  <img
+                    src="./assets/img/cache_marie_heart.svg"
+                    alt="cache_marie_heart"
+                  />
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <i class="fa-sharp fa-solid fa-heart unchecked"
+                      ><span class="x"></span
+                    ></i>
+                    <i class="fa-sharp fa-solid fa-heart checked"><span class="x"></span></i>
+                    <span class="hidden">like</span>
+                  </label>
+                </div>
+                <p class="card_description">Cité Rouge</p>
+              </div>
+            </article>
+
+            <article class="card_restaurants">
+              <div class="img_restaurant"></div>
+              <div class="card_restaurants_title">
+                <h3 class="card_title">Le délice des sens</h3>
+                <div class="like">
+                  <img
+                    src="./assets/img/cache_marie_heart.svg"
+                    alt="cache_marie_heart"
+                  />
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <i class="fa-sharp fa-solid fa-heart unchecked"
+                      ><span class="x"></span
+                    ></i>
+                    <i class="fa-sharp fa-solid fa-heart checked"><span class="x"></span></i>
+                    <span class="hidden">like</span>
+                  </label>
+                </div>
+                <p class="card_description">Folie-Méricourt</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
 
       <!-- FOOTER -->
 
-      <footer></footer>
+      <footer class="footer"></footer>
     </div>
   </body>
 </html>

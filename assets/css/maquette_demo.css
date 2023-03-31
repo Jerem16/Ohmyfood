@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 376px) {
   .wrapper {
-    opacity: 0.5;
+    opacity: 10.5;
     color: blue;
   }
   body {

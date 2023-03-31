@@ -2,6 +2,13 @@
   @if (lightness($colour) < 25%) {
     @return lighten($colour, 10%);
   } @else {
+    @return lighten($colour, 10%);
+  }
+}
+@function darken-shift($colour) {
+  @if (lightness($colour) < 25%) {
+    @return darken($colour, 10%);
+  } @else {
     @return darken($colour, 10%);
   }
 }
