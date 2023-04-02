@@ -123,28 +123,35 @@
 
   /****** [Footer] ******/
 
-  .footer {
-    display: inline-flex;
-    flex-flow: row-reverse nowrap;
-    align-items: flex-end;
-    justify-content: flex-start;
-    width: calc(100% - 0px);
-    max-height: 114px;
+  footer {
     background-color: $color-location-font;
-    padding: 0;
-    box-sizing: border-box;
+    height: 114px;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
     padding-bottom: 30px;
-
-    a {
-      display: block;
-      color: $color-white;
-    }
-    > a {
-      margin: 0 25px 0px 25px;
-      width: 138.5px;
-      height: 27px;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    .footer {
+      align-self: center;
+      display: inline-flex;
+      flex-flow: row-reverse nowrap;
+      align-items: flex-end;
+      justify-content: flex-start;
+      max-height: 114px;
+      a {
+        display: block;
+        color: $color-white;
+      }
+      > a {
+        margin: 0 25px 0px 25px;
+        width: 138.5px;
+        height: 27px;
+      }
     }
   }
+
   .footer_subscription {
     display: inline-flex;
     flex-flow: row nowrap;

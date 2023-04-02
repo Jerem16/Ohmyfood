@@ -1,4 +1,127 @@
 /****** [ Animation ] ******/
+/****** [ Accueil N°1 search-location  ] ******/
+@keyframes ico-location {
+  0% {
+    color: $color-primary;
+    background: $bg-color-localization;
+    animation-timing-function: ease-in-out;
+    background-clip: border-box;
+    background-position: 0% 50%;
+    opacity: 0.75;
+  }
+  39% {
+    color: $color-location-font;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    color: lightness-shift($color-location-font);
+    background: lightness-shift($bg-color-localization);
+    opacity: 1;
+    background-position: 100% 50%;
+  }
 
+  61% {
+    color: $color-location-font;
+    animation-timing-function: ease-in-out;
+    opacity: 0.85;
+  }
+  70% {
+    background-clip: border-box;
+  }
+  70% {
+    color: $color-primary;
+    background: $bg-color-localization;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  100% {
+    color: transparent;
+    background: $bg_linear-gradient;
+    background-clip: text;
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient_move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/****** [ Accueil N°3 Restaurants  ] ******/
+@keyframes heart {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes heart-stroke {
+  0% {
+    -webkit-text-stroke: 1px black;
+  }
+  100% {
+    -webkit-text-stroke: 1px transparent;
+  }
+}
+/****** [Footer] ******/
+@keyframes handshake {
+  0% {
+    transform: rotate(60deg) translate(0px, 2px);
+    animation-timing-function: ease-in;
+  }
 
-  
+  25% {
+    transform: translate(0px, -2px) rotate(60deg);
+  }
+
+  50% {
+    transform: translate(0px, 0px) rotate(30deg);
+  }
+  75% {
+    transform: translate(0px, 2px) rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  81% {
+    transform: translate(0px, -2px) rotate(0deg);
+    animation-timing-function: linear;
+  }
+  87% {
+    transform: translate(0px, 2px) rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translate(0px, -2px) rotate(0deg);
+    animation-timing-function: linear;
+  }
+  99% {
+    transform: translate(0px, 2px) rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes utensils {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  25% {
+    transform: translate(0px, -5px) rotate3d(0, 1, 0, 1turn);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(180deg);
+    animation-timing-function: ease-in-out;
+    color: $color-white;
+  }
+  75% {
+    transform: translate(0px, -5px) rotate3d(0, 0, 0, 1turn);
+    animation-timing-function: ease-out;
+    color: lightness-shift($color-nav-ico);
+  }
+}
