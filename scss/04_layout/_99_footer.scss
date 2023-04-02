@@ -2,8 +2,117 @@
 
 .footer {
   display: flex;
-  width: 100%;
+  flex-flow: column;
+  width: calc(100% - 50px);
   height: 153px;
-  padding: 22px 25px;
+  padding: 21.75px 25px 22px 25px;
   background-color: $color-location-font;
+  transition: all 155ms ease-in-out;
+  a {
+    color: $color-white;
+  }
+  > a {
+    @include footer_logo;
+    margin-bottom: 16.5px;
+    max-width: 138.5px;
+  }
+}
+.footer_subscription {
+  @include footer_subscription;
+  display: flex;
+  flex-flow: column;
+  width: 190px;
+  height: 50px;
+  margin: 0;
+  a {
+    margin-bottom: 8px;
+    &:nth-child(1) > i {
+      font-size: 13px;
+      padding-right: 6px;
+    }
+    &:nth-child(2) > i {
+      font-size: 12px;
+      padding-right: 2px;
+    }
+  }
+  &:hover a {
+    max-width: 190px;
+    transition: all 720ms ease-in-out;
+    color: lightness-shift($color-nav-ico);
+    &:hover {
+      transition: all 350ms ease-in-out;
+      @include text-shadow(rgba(0, 0, 0, 0.35));
+      color: $color-white;
+    }
+    &:nth-child(1):hover > i {
+      transform: rotate3d(0, 1, 0, 1turn);
+      animation: utensils 1330ms 330ms 2 alternate-reverse;
+    }
+    &:nth-child(2):hover > i {
+      transform: rotate(0deg);
+      animation: handshake 2030ms 1 linear;
+    }
+  }
+}
+@keyframes handshake {
+  0% {
+    transform: rotate(60deg) translate(0px, 2px);
+    animation-timing-function: ease-in;
+  }
+
+  25% {
+    transform: translate(0px, -2px) rotate(60deg);
+  }
+
+  50% {
+    transform: translate(0px, 0px) rotate(30deg);
+  }
+  75% {
+    transform: translate(0px, 2px) rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  81% {
+    transform: translate(0px, -2px) rotate(0deg);
+    animation-timing-function: linear;
+  }
+  87% {
+    transform: translate(0px, 2px) rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translate(0px, -2px) rotate(0deg);
+    animation-timing-function: linear;
+  }
+  99% {
+    transform: translate(0px, 2px) rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+}
+.footer_contact {
+  display: flex;
+  flex-flow: column;
+  @include footer_contact;
+  max-width: 130px;
+  margin-top: -1px;
+}
+@keyframes utensils {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  25% {
+    transform: translate(0px, -5px) rotate3d(0, 1, 0, 1turn);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(180deg);
+    animation-timing-function: ease-in-out;
+    color: $color-white;
+  }
+  75% {
+    transform: translate(0px, -5px) rotate3d(0, 0, 0, 1turn);
+    animation-timing-function: ease-out;
+    color: lightness-shift($color-nav-ico);
+  }
 }

@@ -1,27 +1,40 @@
 /****** [Header] ******/
 
 .full-heading {
-    @include box-shadow(rgba(0, 0, 0, 0.15));
+  @include box-shadow(rgba(0, 0, 0, 0.15));
+  display: flex;
   z-index: 1;
   position: relative;
   width: 100%;
   height: 63px;
   background-color: $color-white;
   margin: 0 auto;
+  .head {
+    &__return {
+
+    }
+    .hidden {
+        display: none;
+    }
+  }
+}
+.head {
+  position: relative;
+  width: 100%;
+  max-width: calc(1440px - 0px);
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
   &__logo {
     width: 163.5px;
     height: 44px;
-    padding-top: 13px;
-    padding-right: 1px;
+    padding: 13px 1px 0 0;
     object-fit: contain;
+    align-self: center;
   }
   &__return {
-    position: absolute;
-    left: 0;
-    padding-left: 23px;
-    padding-top: 5px;
-    font-size: 1.22em;
-    max-width: 17px;
-    color: $color-logo-font;
+    display: none;
+    cursor: pointer;
   }
 }

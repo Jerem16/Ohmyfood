@@ -5,8 +5,11 @@
   background-color: $bg-color-localization;
   color: $color-location-font;
   position: relative;
+  margin: auto;
 
   form {
+    display: block;
+
     .ico_location,
     input {
       border: none;
@@ -19,8 +22,8 @@
     .input-research {
       position: relative;
       top: -0.25px;
-      width: 150px;
-      padding: 7.75px 8px 6px 8px;
+      width: 129px;
+      padding: 7.75px 0px 6px 12px;
       background-color: transparent;
       @include bord-rad_input-research;
       /*Animation*/
@@ -48,13 +51,12 @@
         background-size: 600px 200px;
         animation: gradient_move 10000ms ease-in-out infinite alternate-reverse;
       }
-
     }
     .ico_location {
       transform: scaleY(1.01);
       position: relative;
       display: inline-block;
-      padding: 7px 10px 7px 9px;
+      padding: 7px 6px 7px 9px;
       top: -1px;
       background-color: transparent;
       margin-right: -5px;
@@ -63,7 +65,7 @@
 
       transition: all 300ms;
       &:hover {
-        animation: ico-location 330ms ease-in-out forwards;
+        animation: ico-location 2330ms ease-in-out forwards;
       }
       &:active {
         transform: scaleY(1.011) scaleX(1.011);
@@ -79,6 +81,7 @@
     }
   }
 }
+
 @keyframes ico-location {
   0% {
     color: $color-primary;
@@ -86,6 +89,7 @@
     animation-timing-function: ease-in-out;
     background-clip: border-box;
     background-position: 0% 50%;
+    opacity: 0.75;
   }
   39% {
     color: $color-location-font;
@@ -101,6 +105,7 @@
   61% {
     color: $color-location-font;
     animation-timing-function: ease-in-out;
+    opacity: 0.85;
   }
   70% {
     background-clip: border-box;

@@ -26,7 +26,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/00_normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     <link rel="stylesheet" href="./scss/main.css" />
     <link rel="stylesheet" href="./assets/css/maquette_demo.css" />
 
@@ -40,209 +40,238 @@
     <div class="wrapper">
       <!-- HEADER -->
 
-      <header class="full-heading flex-row_jac-ctr">
-        <a
-          href="./index.html"
-          aria-label="main_return"
-          class="hidden full-heading__return"
-          ><i class="fa-solid fa-arrow-left"></i
-        ></a>
-        <a href="#"
-          ><img
-            class="full-heading__logo"
-            src="./assets/img/logo/ohmyfood.png"
-            srcset="
-              ./assets/img/logo/ohmyfood.png,
-              ./assets/img/logo/ohmyfood@2x.svg
-            "
-            alt="ico_logo_Ohmyfood"
-        /></a>
+      <header class="full-heading flex_row-cc">
+        <div class="head flex_row-cc">
+          <a href="./index.html" aria-label="return" class="head__return hidden"
+            ><i class="fa-solid fa-arrow-left"></i
+          ></a>
+          <a href="#"
+            ><img
+              class="head__logo"
+              src="./assets/img/logo/ohmyfood.png"
+              srcset="
+                ./assets/img/logo/ohmyfood.png,
+                ./assets/img/logo/ohmyfood@2x.svg
+              "
+              alt="ico_logo_Ohmyfood"
+          /></a>
+        </div>
       </header>
-
-      <!-- LOCATION -->
-
-      <section class="search-location flex-row_jac-ctr">
-        <h2 class="hidden">search-location</h2>
-        <form
-          class="search-button"
-          action="https://www.ville-guebwiller.fr/wp-content/uploads/2018/09/en-cours-de-construction.png"
-          method="get"
-          target="_blank"
-        >
-          <label for="research"><span class="hidden">research</span></label>
-          <button
-            class="ico_location"
-            aria-label="position"
-            type="submit"
-            formaction="https://www.google.com/maps/place/Belleville,+75020+Paris/@48.8711841,2.3844931,17z"
-          >
-            <i
-              class="fa-sharp fa-solid fa-location-dot black"
-              aria-hidden="true"
-            ></i>
-          </button>
-          <input
-            class="input-research"
-            type="search"
-            name="research"
-            aria-label="Search"
-            id="research"
-            placeholder=""
-            value="Paris, Belleville"
-          />
-        </form>
-      </section>
-
-      <!-- PRESENTATION -->
-
-      <section class="flex-col_jac-ctr presentation">
-        <h1 class="font_h1">Réservez le menu qui vous convient</h1>
-        <p class="font_h1_p">
-          Découvrez des restaurants d’exception, sélectionnés par nos soins.
-        </p>
-        <a
-          href="#restaurants"
-          class="btn local_style_gradient bx-sz_btn_go-restaurants"
-        >
-          Explorer nos restaurants
-        </a>
-      </section>
-
-      <!-- NAVIGATION -->
-
-      <section class="fonctionnement flex-col_jac-ctr">
-        <h2 class="font_h2_acceuil">Fonctionnement</h2>
-        <nav class="nav">
-          <div class="nav_block flex-row_jac-ctr">
-            <a class="nav_content">
-              <div class="nav_num"><p class="num">1</p></div>
-              <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
-              Choisissez un restaurant
-            </a>
-          </div>
-
-          <div class="nav_block">
-            <a class="nav_content">
-              <div class="nav_num"><p class="num">2</p></div>
-              <i class="fa-solid fa-list-ul"></i>
-              Composez votre menu
-            </a>
-          </div>
-
-          <div class="nav_block">
-            <a class="nav_content">
-              <div class="nav_num"><p class="num">3</p></div>
-              <i class="fa-solid fa-store"></i>
-              Dégustez au restaurant
-            </a>
-          </div>
-        </nav>
-      </section>
       <!-- MAIN -->
 
       <main>
-        <section class="restaurant">
-          <h2 class="font_h2_restaurants">Restaurants</h2>
+        <!-- LOCATION -->
 
-          <div class="grid_restaurant">
-            <article class="card_restaurants">
-              <div class="img_restaurant"></div>
-              <div class="card_restaurants_title">
-                <h3 class="card_title">La palette du goût</h3>
-                <div class="like">
-                  <img
-                    src="./assets/img/cache_marie_heart.svg"
-                    alt="cache_marie_heart"
-                  />
-                  <form method="get" action="#">
-                    <label class="custom-checkbox" for="like">
-                      <input type="checkbox" name="like" id="like" />
-                      <i class="fa-sharp fa-solid fa-heart unchecked">
-                        <span class="x"></span>
-                      </i>
-                      <i class="fa-sharp fa-solid fa-heart checked">
-                        <span class="x"></span>
-                      </i>
+        <section class="search-location flex_row-cc">
+          <div class="flex-col_c margin">
+            <h2 class="hidden">search-location</h2>
+            <form
+              class="search-button"
+              action="https://www.ville-guebwiller.fr/wp-content/uploads/2018/09/en-cours-de-construction.png"
+              method="get"
+              target="_blank"
+            >
+              <label for="research"><span class="hidden">research</span></label>
+              <button
+                class="ico_location"
+                aria-label="position"
+                type="submit"
+                formaction="https://www.google.com/maps/place/Belleville,+75020+Paris/@48.8711841,2.3844931,17z"
+              >
+                <i
+                  class="fa-sharp fa-solid fa-location-dot black"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <input
+                class="input-research"
+                type="search"
+                name="research"
+                aria-label="Search"
+                id="research"
+                placeholder=""
+                value="Paris, Belleville"
+              />
+            </form>
+          </div>
+        </section>
+
+        <!-- PRESENTATION -->
+
+        <section class="presentation flex_row-cc">
+          <div class="flex-col_c margin">
+            <h1 class="font_h1">Réservez le menu qui vous convient</h1>
+            <p class="font_h1_p">
+              Découvrez des restaurants d’exception, sélectionnés par nos soins.
+            </p>
+            <a href="#restaurants" class="btn local_style_gradient">
+              Explorer nos restaurants
+            </a>
+          </div>
+        </section>
+
+        <!-- NAVIGATION -->
+
+        <section class="fonctionnement flex_row-cc">
+          <div class="margin flex-col_c">
+            <h2 class="font_h2_acceuil">Fonctionnement</h2>
+            <nav class="nav">
+              <a class="nav_content">
+                <div class="flex_row-cc nav_num">
+                  <p class="num">1</p>
+                </div>
+                <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+                Choisissez un restaurant
+              </a>
+
+              <a class="nav_content">
+                <div class="flex_row-cc nav_num">
+                  <p class="num">2</p>
+                </div>
+                <i class="fa-solid fa-list-ul"></i>
+                Composez votre menu
+              </a>
+
+              <a class="nav_content">
+                <div class="flex_row-cc nav_num"><p class="num">3</p></div>
+                <i class="fa-solid fa-store"></i>
+                Dégustez au restaurant
+              </a>
+            </nav>
+          </div>
+        </section>
+
+        <!-- RETAURANTS -->
+
+        <section class="restaurant flex_row-cc" id="menu_restaurants">
+          <div class="margin flex-col_c">
+            <h2 class="font_h2_restaurants">Restaurants</h2>
+
+            <div class="grid_restaurant margin">
+              <article class="card_restaurants">
+                <div class="img_restaurant"></div>
+                <div class="card_restaurants_title">
+                  <h3 class="card_title">La palette du goût</h3>
+                  <div class="like">
+                    <img
+                      src="./assets/img/cache_marie_heart.svg"
+                      alt="cache_marie_heart"
+                    />
+                    <form method="get" action="#">
+                      <label class="custom-checkbox" for="like">
+                        <input type="checkbox" name="like" id="like" />
+                        <i class="fa-sharp fa-solid fa-heart unchecked">
+                          <span class="x"></span>
+                        </i>
+                        <i class="fa-sharp fa-solid fa-heart checked">
+                          <span class="x"></span>
+                        </i>
+                        <span class="hidden">like</span>
+                      </label>
+                    </form>
+                  </div>
+                  <p class="card_description">Ménilmontant</p>
+                </div>
+              </article>
+
+              <article class="card_restaurants">
+                <div class="img_restaurant"></div>
+                <div class="card_restaurants_title">
+                  <h3 class="card_title">La note enchantée</h3>
+                  <div class="like">
+                    <img
+                      src="./assets/img/cache_marie_heart.svg"
+                      alt="cache_marie_heart"
+                    />
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <i class="fa-sharp fa-solid fa-heart unchecked"
+                        ><span class="x"></span
+                      ></i>
+                      <i class="fa-sharp fa-solid fa-heart checked"
+                        ><span class="x"></span
+                      ></i>
                       <span class="hidden">like</span>
                     </label>
-                  </form>
+                  </div>
+                  <p class="card_description">Charonne</p>
                 </div>
-                <p class="card_description">Ménilmontant</p>
-              </div>
-            </article>
+              </article>
 
-            <article class="card_restaurants">
-              <div class="img_restaurant"></div>
-              <div class="card_restaurants_title">
-                <h3 class="card_title">La note enchantée</h3>
-                <div class="like">
-                  <img
-                    src="./assets/img/cache_marie_heart.svg"
-                    alt="cache_marie_heart"
-                  />
-                  <label class="custom-checkbox">
-                    <input type="checkbox" />
-                    <i class="fa-sharp fa-solid fa-heart unchecked"
-                      ><span class="x"></span
-                    ></i>
-                    <i class="fa-sharp fa-solid fa-heart checked"><span class="x"></span></i>
-                    <span class="hidden">like</span>
-                  </label>
+              <article class="card_restaurants">
+                <div class="img_restaurant"></div>
+                <div class="card_restaurants_title">
+                  <h3 class="card_title">À la française</h3>
+                  <div class="like">
+                    <img
+                      src="./assets/img/cache_marie_heart.svg"
+                      alt="cache_marie_heart"
+                    />
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <i class="fa-sharp fa-solid fa-heart unchecked"
+                        ><span class="x"></span
+                      ></i>
+                      <i class="fa-sharp fa-solid fa-heart checked"
+                        ><span class="x"></span
+                      ></i>
+                      <span class="hidden">like</span>
+                    </label>
+                  </div>
+                  <p class="card_description">Cité Rouge</p>
                 </div>
-                <p class="card_description">Charonne</p>
-              </div>
-            </article>
+              </article>
 
-            <article class="card_restaurants">
-              <div class="img_restaurant"></div>
-              <div class="card_restaurants_title">
-                <h3 class="card_title">À la française</h3>
-                <div class="like">
-                  <img
-                    src="./assets/img/cache_marie_heart.svg"
-                    alt="cache_marie_heart"
-                  />
-                  <label class="custom-checkbox">
-                    <input type="checkbox" />
-                    <i class="fa-sharp fa-solid fa-heart unchecked"
-                      ><span class="x"></span
-                    ></i>
-                    <i class="fa-sharp fa-solid fa-heart checked"><span class="x"></span></i>
-                    <span class="hidden">like</span>
-                  </label>
+              <article class="card_restaurants">
+                <div class="img_restaurant"></div>
+                <div class="card_restaurants_title">
+                  <h3 class="card_title">Le délice des sens</h3>
+                  <div class="like">
+                    <img
+                      src="./assets/img/cache_marie_heart.svg"
+                      alt="cache_marie_heart"
+                    />
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <i class="fa-sharp fa-solid fa-heart unchecked"
+                        ><span class="x"></span
+                      ></i>
+                      <i class="fa-sharp fa-solid fa-heart checked"
+                        ><span class="x"></span
+                      ></i>
+                      <span class="hidden">like</span>
+                    </label>
+                  </div>
+                  <p class="card_description">Folie-Méricourt</p>
                 </div>
-                <p class="card_description">Cité Rouge</p>
-              </div>
-            </article>
-
-            <article class="card_restaurants">
-              <div class="img_restaurant"></div>
-              <div class="card_restaurants_title">
-                <h3 class="card_title">Le délice des sens</h3>
-                <div class="like">
-                  <img
-                    src="./assets/img/cache_marie_heart.svg"
-                    alt="cache_marie_heart"
-                  />
-                  <label class="custom-checkbox">
-                    <input type="checkbox" />
-                    <i class="fa-sharp fa-solid fa-heart unchecked"
-                      ><span class="x"></span
-                    ></i>
-                    <i class="fa-sharp fa-solid fa-heart checked"><span class="x"></span></i>
-                    <span class="hidden">like</span>
-                  </label>
-                </div>
-                <p class="card_description">Folie-Méricourt</p>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </section>
       </main>
 
       <!-- FOOTER -->
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <a href="./index.html" aria-label="main_return" class="footer_logo">
+          ohmyfood
+        </a>
+
+        <div class="footer_subscription">
+          <a href="#">
+            <i class="fa-solid fa-utensils"></i>
+            Proposer un restaurant
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-handshake-angle"></i>
+            Devenir partenaire
+          </a>
+          <div class="footer_contact">
+            <a href="#">Mentions&nbsplégales</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

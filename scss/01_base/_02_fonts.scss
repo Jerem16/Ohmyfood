@@ -80,9 +80,18 @@
 
 @mixin footer_logo {
   font-family: "Shrikhand", sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  color: $color-white;
+}
+@mixin footer_subscription {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin footer_contact {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }

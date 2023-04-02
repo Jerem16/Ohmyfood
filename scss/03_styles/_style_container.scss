@@ -1,13 +1,13 @@
 /****** [Styles] ******/
-.flex-row_jac-ctr {
+.flex_row-cc {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
 }
 
-.flex-col_jac-ctr {
+.flex-col_c {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
 }

@@ -1,9 +1,9 @@
-@media screen and (max-width: 1440px) {
-     body {
+@media screen and (max-width: 10440px) {
+  body {
     background-image: url(../img/Homepage_desk.jpg);
-    background-size: 1440px 1218px;
-    /* background-image: url(../img/Menu\ La\ palette\ du\ gout_desk.jpg);
-    background-size: 1440px 1699px;*/
+    background-size: 1440px 1395px;
+    /* background-image: url(../img/Menu\ La\ palette\ du\ gout.jpg);
+    background-size: 1440px 1705px; */
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -13,10 +13,6 @@
     color: blue;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 1438px) {
   body {
@@ -31,7 +27,7 @@
 
 @media screen and (max-width: 376px) {
   .wrapper {
-    opacity: 10.5;
+    opacity: 0.5;
     color: blue;
   }
   body {

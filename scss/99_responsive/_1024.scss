@@ -1,5 +1,183 @@
 /****** --Media queries-- ******/
 /***!! [--1024px--] ****/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .margin {
+    margin: 0 0px;
+    max-width: calc(1440px - 360px);
+  }
+  /****** [Header] ******/
+  .full-heading {
+    height: 96px;
+  }
+  .head {
+    &__logo {
+      position: relative;
+      width: 200px;
+      padding: 0 1px 0 0;
+    }
+  }
+  .head__return {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 24px;
+    top: 14px;
+    font-size: 1.2258em;
+    color: $color-logo-font;
+    align-self: flex-start;
+  }
+
+  /****** [ Accueil N°2 Presentation ] ******/
+  .presentation {
+    margin: 0;
+    a {
+      padding: 15px 21.5px 16px 21.5px;
+    }
+  }
+
+  .font_h1 {
+    @include font_presentation_h1;
+    margin: 30px 0px 1px 0px;
+    letter-spacing: -0.7px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .font_h1_p {
+    margin: 30px 0 1px -2.5px;
+    letter-spacing: 0.0082px;
+  }
+  /*BUTTON*/
+
+  .local_style_gradient {
+    margin: 30px 0 28px -26px;
+  }
+
+  /****** [ Accueil N°3 Fonctionnement  ] ******/
+
+  .fonctionnement {
+    padding-top: 2px;
+    padding-bottom: 50px;
+  }
+  .font_h2_acceuil {
+    @include font_h2_acceuil;
+    margin: 48px 0 7px -0.5px;
+  }
+
+  .nav {
+    .nav_content:nth-child(1) i {
+      top: -1px;
+    }
+    .nav_content:nth-child(3) i {
+      left: 8px;
+    }
+  }
+
+  /****** [ Accueil N°3 Restaurants  ] ******/
+
+  /* SECTION-PRINCIAL*/
+
+  /* TITLE*/
+  h2.font_h2_restaurants {
+    width: calc(100% - 0px);
+    margin: 26px 0 29px 0;
+  }
+  /* SECTION-SECONDAIRE*/
+  .grid_restaurant {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    padding: 0px 0px 30px 0px;
+    gap: 50px 100px;
+  }
+
+  .card_restaurants {
+    max-width: 490px;
+
+    &:nth-child(1) {
+      background-size: cover;
+      background-position: center -105px;
+    }
+    &:nth-child(2) {
+      background-size: cover;
+      background-position: center -250px;
+    }
+    &:nth-child(3) {
+      background-size: cover;
+      background-position: center -104px;
+    }
+    &:nth-child(4) {
+      background-size: cover;
+      background-position: center -110px;
+    }
+  }
+  /* SECTION-CARD*/
+  .card_title {
+    margin: 0;
+    padding: 15.25px 0 0 20px;
+  }
+  .card_description {
+    margin: 0;
+    padding: 2px 0 0 20px;
+  }
+
+  /****** [Footer] ******/
+
+  .footer {
+    display: inline-flex;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: calc(100% - 0px);
+    max-height: 114px;
+    background-color: $color-location-font;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+
+    a {
+      display: block;
+      color: $color-white;
+    }
+    > a {
+      margin: 0 25px 0px 25px;
+      width: 138.5px;
+      height: 27px;
+    }
+  }
+  .footer_subscription {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    width: 660px;
+    height: 20px;
+
+    > a:nth-child(1) {
+      padding: 0 9.5px 0 7px;
+      > i {
+        position: relative;
+        top: -1px;
+        left: -1px;
+        margin-left: 1px;
+      }
+    }
+    > a:nth-child(2) {
+      padding: 0 24px 0 0;
+      > i {
+        position: relative;
+        top: -0.5px;
+        left: -1px;
+        margin-left: 2px;
+      }
+    }
+    .footer_contact {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      width: 360px;
+      height: 20px;
+      margin: 0 20px 0 20px;
+      > a:nth-child(1) {
+        padding: 0 15.5px 0 0;
+      }
+    }
+  }
 }
-/***!! Clearing-inf:1024px ****/
