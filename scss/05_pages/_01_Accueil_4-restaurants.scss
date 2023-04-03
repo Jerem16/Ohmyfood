@@ -91,42 +91,43 @@
   font-size: 22px;
   border: 1px solid white;
   margin: 19px 25px 0 21.5px;
-  cursor: pointer;
   z-index: 10;
   object-fit: cover;
-}
-
-.fa-heart {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  top: 1px;
-  bottom: 0;
-
-  width: 100%;
-  height: 100%;
-
-  color: transparent;
-  background-color: transparent;
-  background-clip: text;
-}
-.unchecked {
   cursor: pointer;
-  -webkit-text-stroke: 1px transparent;
-  > .x {
-    display: block;
+  .fa-heart {
+    text-align: center;
+
     position: absolute;
-    background: $bg_linear-gradient;
-    width: 24px;
-    height: 0%;
-    max-height: 20px;
-    left: 3px;
-    bottom: 3px;
-    transition: all 1.5s;
-    z-index: -1;
+    top: 1px;
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    background: transparent;
+    background-clip: text;
+    .unchecked,
+    .checked {
+      background: transparent;
+      -webkit-text-stroke: 1px transparent;
+      transition: all 1.5s;
+    }
+    .x {
+      display: block;
+      position: absolute;
+      background: $bg_linear-gradient;
+      width: 26px;
+      height: 0%;
+
+      left: 1px;
+      bottom: 1px;
+      transition: all 1.5s;
+      z-index: -1;
+    }
   }
 }
+
 .unchecked:defined .x {
   animation: heart 1.5s forwards reverse;
   height: 21px;
@@ -137,22 +138,6 @@
   animation: heart-stroke 2.05s forwards reverse;
 }
 
-.checked {
-  -webkit-text-stroke: 1px transparent;
-  cursor: pointer;
-  > .x {
-    display: block;
-    position: absolute;
-    background: $bg_linear-gradient;
-    width: 24px;
-    height: 0%;
-    max-height: 20px;
-    left: 3px;
-    bottom: 3px;
-    transition: all 1.5s;
-    z-index: -1;
-  }
-}
 .checked:defined .x {
   animation: heart 1.5s forwards;
   height: 21px;
@@ -160,4 +145,38 @@
 .checked:defined {
   -webkit-text-stroke: 1px transparent;
   animation: heart-stroke 1.5s backwards;
+}
+.luky {
+  transition: all 1.5s;
+}
+.luky:hover {
+  .checked {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background: transparent;
+    color: transparent;
+    background-clip: text;
+    width: 100%;
+    height: 100%;
+    background-size: text;
+    max-height: 22.5px;
+
+    animation: heart 1.5s forwards;
+  }
+  .unchecked:defined {
+    -webkit-text-stroke: 1px transparent;
+    animation: heart-stroke 0.05s backwards reverse;
+    -index: -1;
+  }
+}
+
+.luky:hover .checked {
+  -webkit-text-stroke: 1px transparent;
+  animation: heart-stroke 2.05s forwards;
+
+  .x {
+    animation: heart 1.5s forwards;
+    height: 21px;
+  }
 }

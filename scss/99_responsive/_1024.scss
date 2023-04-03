@@ -133,8 +133,7 @@
     box-sizing: border-box;
     padding: 0;
     height: 114px;
-    bottom: 0;
-    left: 0px;
+
 
     .footer {
       align-self: flex-end;
@@ -142,7 +141,7 @@
       flex-flow: row-reverse nowrap;
       align-items: flex-start;
       justify-content: flex-start;
-      width: calc(100% - 0px);
+      width: 100%;
       position: absolute;
       left: 0px;
       box-sizing: border-box;

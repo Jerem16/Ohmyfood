@@ -65,7 +65,7 @@
 
       transition: all 300ms;
       &:hover {
-        animation: ico-location 2330ms ease-in-out forwards;
+        animation: ico-location 250ms ease-in-out forwards;
       }
       &:active {
         transform: scaleY(1.011) scaleX(1.011);
@@ -76,7 +76,7 @@
         background-clip: border-box;
         transition: all 30ms;
         @include text-shadow(rgba(0, 0, 0, 0.35));
-        animation: gradient_move 5000ms ease-in-out infinite alternate-reverse;
+        animation: gradient_move 1250ms ease-in-out infinite alternate-reverse;
       }
     }
   }
