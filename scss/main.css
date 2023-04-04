@@ -75,11 +75,11 @@ body {
   display: none;
 }
 
-a {
-  text-decoration: none;
-}
-a:active, a:visited {
+a,
+a:active,
+a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .margin {
@@ -118,16 +118,16 @@ a:active, a:visited {
   }
 }
 */
-.custom-checkbox input[type=checkbox],
+.custom-checkbox input[type="checkbox"],
 .custom-checkbox .checked {
   display: none;
 }
 
-.custom-checkbox input[type=checkbox]:checked ~ .checked {
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
   display: inline-block;
 }
 
-.custom-checkbox input[type=checkbox]:checked ~ .unchecked {
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
   display: none;
 }
 
@@ -173,8 +173,7 @@ a:active, a:visited {
   width: 163.5px;
   height: 44px;
   padding: 13px 1px 0 0;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   align-self: center;
 }
 .head__return {
@@ -306,6 +305,10 @@ footer .footer > a {
   width: 129px;
   padding: 7.75px 0px 6px 12px;
   background-color: transparent;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -ms-border-radius: 0px 10px 10px 0px;
+  -o-border-radius: 0px 10px 10px 0px;
   border-radius: 0px 10px 10px 0px;
   /*Animation*/
   box-shadow: 0px 2px 4px inset rgba(0, 0, 0, 0);
@@ -324,13 +327,13 @@ footer .footer > a {
   line-height: 19px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
 }
-.search-location form button:hover + input, .search-location form button:hover,
+.search-location form button:hover + input,
+.search-location form button:hover,
 .search-location form button + input:hover + input,
 .search-location form button + input:hover {
   color: transparent;
   background: linear-gradient(90deg, #9356dc, #ff79da, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   z-index: 9;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -346,6 +349,10 @@ footer .footer > a {
   background-color: transparent;
   margin-right: -5px;
   margin-left: -4.5px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -ms-border-radius: 10px 0px 0px 10px;
+  -o-border-radius: 10px 0px 0px 10px;
   border-radius: 10px 0px 0px 10px;
   transition: all 300ms;
 }
@@ -438,7 +445,11 @@ footer .footer > a {
   border-radius: 25px;
   z-index: -1;
   opacity: 0;
-  background: linear-gradient(193.33deg, rgba(147, 86, 220, 0.8980392157) -11.44%, rgba(255, 121, 218, 0.8980392157) 123.93%);
+  background: linear-gradient(
+    193.33deg,
+    rgba(147, 86, 220, 0.8980392157) -11.44%,
+    rgba(255, 121, 218, 0.8980392157) 123.93%
+  );
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   transition: all 450ms;
 }
@@ -628,25 +639,25 @@ footer .footer > a {
   transition: all 300ms;
 }
 .margin .card_restaurants:nth-child(1) {
-  background-image: url(../../assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 102.5% 97.5%;
   background-position: center -65px;
   background-repeat: no-repeat;
 }
 .margin .card_restaurants:nth-child(2) {
-  background-image: url(../../assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-position: center -41vw;
   background-repeat: no-repeat;
 }
 .margin .card_restaurants:nth-child(3) {
-  background-image: url(../../assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: 102% 93.5%;
   background-position: center -60px;
   background-repeat: no-repeat;
 }
 .margin .card_restaurants:nth-child(4) {
-  background-image: url(../../assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: 100% 94.1%;
   background-position: center -60px;
   background-repeat: no-repeat;
@@ -696,8 +707,7 @@ footer .footer > a {
   border: 1px solid white;
   margin: 19px 25px 0 21.5px;
   z-index: 10;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 .like .fa-heart {
@@ -709,8 +719,7 @@ footer .footer > a {
   cursor: pointer;
   color: transparent;
   background: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 }
 .like .fa-heart .unchecked,
 .like .fa-heart .checked {
@@ -761,8 +770,7 @@ footer .footer > a {
   background-color: transparent;
   background: transparent;
   color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   width: 100%;
   height: 100%;
   background-size: text;
@@ -1445,8 +1453,7 @@ footer .footer > a {
   100% {
     color: transparent;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     background-position: 0% 50%;
     animation-timing-function: ease-out;
   }
@@ -1532,4 +1539,4 @@ footer .footer > a {
     color: #989898;
   }
 }
-/****** [ Slider ] ******//*# sourceMappingURL=main.css.map */
+/****** [ Slider ] ******/

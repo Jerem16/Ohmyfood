@@ -26,10 +26,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/00_normalize.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-    <link rel="stylesheet" href="./scss/main.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./scss/main.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/prefixed/style_prefixed.css" /> -->
     <link rel="stylesheet" href="./assets/css/maquette_demo.css" />
-
     <script
       src="https://kit.fontawesome.com/98008fddce.js"
       crossorigin="anonymous"
@@ -151,8 +152,11 @@
               <article class="card_restaurants">
                 <a class="new_card" href="#">Nouveau</a>
                 <div class="img_restaurant"></div>
-                <a class="card_restaurants_title" href="#">
-                  <h3 class="card_title">La palette du goût</h3>
+                <div class="card_restaurants_title">
+                  <a href="./restaurants/la_palette_du_gout.html">
+                    <h3 class="card_title">La palette du goût</h3>
+                    <p class="card_description">Ménilmontant</p>
+                  </a>
                   <div class="like">
                     <img
                       src="./assets/img/cache_marie_heart.svg"
@@ -171,83 +175,94 @@
                       </label>
                     </form>
                   </div>
-                  <p class="card_description">Ménilmontant</p>
-                </a>
+                </div>
               </article>
 
               <article class="card_restaurants">
                 <a class="new_card" href="#">Nouveau</a>
                 <div class="img_restaurant"></div>
-                <a class="card_restaurants_title" href="#">
-                  <h3 class="card_title">La note enchantée</h3>
+                <div class="card_restaurants_title">
+                  <a href="./restaurants/la_note_enchantee.html">
+                    <h3 class="card_title">La note enchantée</h3>
+                    <p class="card_description">Charonne</p>
+                  </a>
                   <div class="like">
                     <img
                       src="./assets/img/cache_marie_heart.svg"
                       alt="cache_marie_heart"
                     />
-                    <label class="custom-checkbox luky">
-                      <input type="checkbox" />
-                      <i class="fa-sharp fa-solid fa-heart unchecked"
-                        ><span class="x"></span
-                      ></i>
-                      <i class="fa-sharp fa-solid fa-heart checked"
-                        ><span class="x"></span
-                      ></i>
-                      <span class="hidden">like</span>
-                    </label>
+                    <form method="get" action="#">
+                      <label class="custom-checkbox luky">
+                        <input type="checkbox" name="like" />
+                        <i class="fa-sharp fa-solid fa-heart unchecked">
+                          <span class="x"></span>
+                        </i>
+                        <i class="fa-sharp fa-solid fa-heart checked">
+                          <span class="x"></span>
+                        </i>
+                        <span class="hidden">like</span>
+                      </label>
+                    </form>
                   </div>
-                  <p class="card_description">Charonne</p>
-                </a>
+                </div>
               </article>
 
               <article class="card_restaurants">
                 <a href="#" class="new_card hidden">Nouveau</a>
                 <div class="img_restaurant"></div>
-                <a class="card_restaurants_title" href="#">
-                  <h3 class="card_title">À la française</h3>
+                <div class="card_restaurants_title">
+                  <a href="./restaurants/a_la_francaise.html">
+                    <h3 class="card_title">À la française</h3>
+                    <p class="card_description">Cité Rouge</p>
+                  </a>
                   <div class="like">
                     <img
                       src="./assets/img/cache_marie_heart.svg"
                       alt="cache_marie_heart"
                     />
-                    <label class="custom-checkbox luky">
-                      <input type="checkbox" />
-                      <i class="fa-sharp fa-solid fa-heart unchecked"
-                        ><span class="x"></span
-                      ></i>
-                      <i class="fa-sharp fa-solid fa-heart checked"
-                        ><span class="x"></span
-                      ></i>
-                      <span class="hidden">like</span>
-                    </label>
+                    <form method="get" action="#">
+                      <label class="custom-checkbox luky">
+                        <input type="checkbox" name="like" />
+                        <i class="fa-sharp fa-solid fa-heart unchecked">
+                          <span class="x"></span>
+                        </i>
+                        <i class="fa-sharp fa-solid fa-heart checked">
+                          <span class="x"></span>
+                        </i>
+                        <span class="hidden">like</span>
+                      </label>
+                    </form>
                   </div>
-                  <p class="card_description">Cité Rouge</p>
-                </a>
+                </div>
               </article>
 
               <article class="card_restaurants">
                 <a href="#" class="new_card hidden">Nouveau</a>
                 <div class="img_restaurant"></div>
-                <a class="card_restaurants_title" href="#">
-                  <h3 class="card_title">Le délice des sens</h3>
+                <div class="card_restaurants_title">
+                  <a href="./restaurants/le_delice_des_sens.html">
+                    <h3 class="card_title">Le délice des sens</h3>
+                    <p class="card_description">Folie-Méricourt</p>
+                  </a>
                   <div class="like">
                     <img
                       src="./assets/img/cache_marie_heart.svg"
                       alt="cache_marie_heart"
                     />
-                    <label class="custom-checkbox luky">
-                      <input type="checkbox" />
-                      <i class="fa-sharp fa-solid fa-heart unchecked"
-                        ><span class="x"></span
-                      ></i>
-                      <i class="fa-sharp fa-solid fa-heart checked"
-                        ><span class="x"></span
-                      ></i>
-                      <span class="hidden">like</span>
-                    </label>
+                    <form method="get" action="#">
+                      <label class="custom-checkbox luky">
+                        <input type="checkbox" />
+                        <i class="fa-sharp fa-solid fa-heart unchecked">
+                          <span class="x"></span>
+                        </i>
+                        <i class="fa-sharp fa-solid fa-heart checked">
+                          <span class="x"></span>
+                        </i>
+                        <span class="hidden">like</span>
+                      </label>
+                    </form>
                   </div>
-                  <p class="card_description">Folie-Méricourt</p>
-                </a>
+                </div>
               </article>
             </div>
           </div>
