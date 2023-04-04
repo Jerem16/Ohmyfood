@@ -97,6 +97,10 @@
 
     .card_restaurants {
       max-width: 490px;
+      .new_card {
+        top: 13.25px;
+        right: 17.5px;
+      }
 
       &:nth-child(1) {
         background-size: cover;

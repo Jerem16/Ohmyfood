@@ -38,6 +38,9 @@ body {
 
 a {
   text-decoration: none;
+  &:active, &:visited {
+    color: black;
+  }
 }
 
 .margin {

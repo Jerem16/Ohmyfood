@@ -94,8 +94,22 @@
   border-radius: 15px;
   height: 251px;
   width: 100%;
-//   max-width: 340px;
+  //   max-width: 340px;
 
   /* desktop */
   //   max-width: 490px;
+}
+@mixin new_card {
+  position: absolute;
+  top: 11.5px;
+  right: 10.5px;
+  padding: 6.5px 12.5px;
+
+  color: $color-green-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  
 }
