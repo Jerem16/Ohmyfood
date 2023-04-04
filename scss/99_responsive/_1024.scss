@@ -1,6 +1,10 @@
 /****** --Media queries-- ******/
 /***!! [--1024px--] ****/
 @media screen and (min-width: 768px) {
+  .nav_content {
+    max-width: calc(322.5px - 52px);
+  }
+
   .margin {
     margin: 0 5.155vw;
     max-width: calc(1440px - 5.155vw * 2);
@@ -113,6 +117,7 @@
       }
     }
   }
+
   /* SECTION-CARD*/
   .card_title {
     margin: 0;
@@ -133,7 +138,6 @@
     box-sizing: border-box;
     padding: 0;
     height: 114px;
-
 
     .footer {
       align-self: flex-end;
@@ -208,6 +212,9 @@
   }
 }
 @media screen and (min-width: 970px) {
+  .nav_content {
+    max-width: calc(322.5px - 52px);
+  }
   .margin {
     margin: 0 5.155vw;
     max-width: calc(1440px - 5.155vw * 2);
@@ -222,7 +229,7 @@
     .card_restaurants {
       &:nth-child(2) {
         background-size: cover;
-        background-position: center -21vw;
+        background-position: center -19.5vw;
       }
       &:nth-child(4) {
         background-size: cover;
@@ -241,6 +248,9 @@
   }
 }
 @media screen and (min-width: 1050px) {
+  .nav_content {
+    max-width: calc(322.5px - 49px);
+  }
   .margin {
     margin: 0 5.714vw;
     max-width: calc(1440px - 5.714vw * 2);
@@ -258,7 +268,7 @@
       }
       &:nth-child(2) {
         background-size: cover;
-        background-position: center -20vw;
+        background-position: center -19.27vw;
       }
       &:nth-child(3) {
         background-size: cover;
@@ -281,9 +291,13 @@
   }
 }
 @media screen and (min-width: 1150px) {
+  .nav_content {
+    max-width: calc(322.5px - 35px);
+  }
   .margin {
     margin: 0 7.826vw;
     max-width: calc(1440px - 7.826vw * 1.8);
+
     /* SECTION-SECONDAIRE* calc(-18vw * 0.5vw) /*/
     .grid_restaurant {
       padding: 0px 2.5775vw 144px 2.5775vw;
@@ -293,7 +307,7 @@
 
     .card_restaurants {
       &:nth-child(2) {
-        background-position: center 17vw;
+        background-position: center -17vw;
       }
       &:nth-child(3) {
         background-size: cover;
@@ -306,19 +320,30 @@
     }
   }
   @media screen and (min-width: 1250px) {
+    .nav_content {
+      max-width: calc(322.5px - 12px);
+    }
     .margin {
-      margin: 0 calc(18vw * 1.2);
-      max-width: calc(1440px - 360px);
+      margin: 0 100px;
+      max-width: calc(1440px - 200px);
       /* SECTION-SECONDAIRE*/
       .grid_restaurant {
         padding: 0px 2.5775vw 144px 2.5775vw;
         margin: -0px 0 0 0;
         gap: 50px 75px;
       }
+      .card_restaurants {
+        &:nth-child(2) {
+          background-position: center -18.5vw;
+        }
+      }
     }
   }
 }
 @media screen and (min-width: 1300px) {
+  .nav_content {
+    max-width: calc(322.5px - 2px);
+  }
   .margin {
     margin: 0 125px;
     /* SECTION-SECONDAIRE*/
@@ -330,6 +355,9 @@
   }
 }
 @media screen and (min-width: 1370px) {
+  .nav_content {
+    max-width: 322.5px;
+  }
   .margin {
     margin: 0 150px;
     /* SECTION-SECONDAIRE*/
@@ -338,6 +366,11 @@
   }
 }
 @media screen and (min-width: 1390px) {
+  .nav_content {
+    width: calc(100vw - 52px);
+    max-width: 322.5px;
+  }
+
   footer {
     .footer {
       gap: 25px;

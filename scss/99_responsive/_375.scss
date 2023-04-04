@@ -109,6 +109,9 @@
   }
 }
 @media screen and (min-width: 570px) {
+    .nav_content {
+        width: calc(322.5px - 32px);
+      }
     .margin {
       margin: 0 12.281vw;
       max-width: calc(1440px - 12.281vw* 2);

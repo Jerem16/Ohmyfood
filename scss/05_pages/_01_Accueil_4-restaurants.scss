@@ -32,14 +32,7 @@
     max-width: 490px;
     @include card_restaurants;
     &:hover {
-      opacity: 0.95;
-      z-index: 2;
-      &::after {
-        @include pseudo-pos;
-        border-radius: 15px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        z-index: -1;
-      }
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
       .new_card {
         -webkit-text-stroke: 0.25px $color-green-font;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);

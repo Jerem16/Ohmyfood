@@ -587,19 +587,7 @@ footer .footer > a {
   /* desktop */
 }
 .margin .card_restaurants:hover {
-  opacity: 0.95;
-  z-index: 2;
-}
-.margin .card_restaurants:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  z-index: -1;
 }
 .margin .card_restaurants:hover .new_card {
   -webkit-text-stroke: 0.25px #008766;
@@ -883,6 +871,9 @@ footer .footer > a {
   }
 }
 @media screen and (min-width: 570px) {
+  .nav_content {
+    width: 290.5px;
+  }
   .margin {
     margin: 0 12.281vw;
     max-width: calc(1440px - 24.562vw);
@@ -894,6 +885,9 @@ footer .footer > a {
 /****** --Media queries-- ******/
 /***!! [--1024px--] ****/
 @media screen and (min-width: 768px) {
+  .nav_content {
+    max-width: 270.5px;
+  }
   .margin {
     margin: 0 5.155vw;
     max-width: calc(1440px - 10.31vw);
@@ -1085,6 +1079,9 @@ footer .footer > a {
   }
 }
 @media screen and (min-width: 970px) {
+  .nav_content {
+    max-width: 270.5px;
+  }
   .margin {
     margin: 0 5.155vw;
     max-width: calc(1440px - 10.31vw);
@@ -1098,7 +1095,7 @@ footer .footer > a {
   }
   .margin .card_restaurants:nth-child(2) {
     background-size: cover;
-    background-position: center -21vw;
+    background-position: center -19.5vw;
   }
   .margin .card_restaurants:nth-child(4) {
     background-size: cover;
@@ -1109,6 +1106,9 @@ footer .footer > a {
   }
 }
 @media screen and (min-width: 1050px) {
+  .nav_content {
+    max-width: 273.5px;
+  }
   .margin {
     margin: 0 5.714vw;
     max-width: calc(1440px - 11.428vw);
@@ -1125,7 +1125,7 @@ footer .footer > a {
   }
   .margin .card_restaurants:nth-child(2) {
     background-size: cover;
-    background-position: center -20vw;
+    background-position: center -19.27vw;
   }
   .margin .card_restaurants:nth-child(3) {
     background-size: cover;
@@ -1140,6 +1140,9 @@ footer .footer > a {
   }
 }
 @media screen and (min-width: 1150px) {
+  .nav_content {
+    max-width: 287.5px;
+  }
   .margin {
     margin: 0 7.826vw;
     max-width: calc(1440px - 14.0868vw);
@@ -1151,7 +1154,7 @@ footer .footer > a {
     gap: 50px 75px;
   }
   .margin .card_restaurants:nth-child(2) {
-    background-position: center 17vw;
+    background-position: center -17vw;
   }
   .margin .card_restaurants:nth-child(3) {
     background-size: cover;
@@ -1163,9 +1166,12 @@ footer .footer > a {
   }
 }
 @media screen and (min-width: 1150px) and (min-width: 1250px) {
+  .nav_content {
+    max-width: 310.5px;
+  }
   .margin {
-    margin: 0 21.6vw;
-    max-width: 1080px;
+    margin: 0 100px;
+    max-width: 1240px;
     /* SECTION-SECONDAIRE*/
   }
   .margin .grid_restaurant {
@@ -1173,8 +1179,14 @@ footer .footer > a {
     margin: 0px 0 0 0;
     gap: 50px 75px;
   }
+  .margin .card_restaurants:nth-child(2) {
+    background-position: center -18.5vw;
+  }
 }
 @media screen and (min-width: 1300px) {
+  .nav_content {
+    max-width: 320.5px;
+  }
   .margin {
     margin: 0 125px;
     /* SECTION-SECONDAIRE*/
@@ -1186,12 +1198,19 @@ footer .footer > a {
   }
 }
 @media screen and (min-width: 1370px) {
+  .nav_content {
+    max-width: 322.5px;
+  }
   .margin {
     margin: 0 150px;
     /* SECTION-SECONDAIRE*/
   }
 }
 @media screen and (min-width: 1390px) {
+  .nav_content {
+    width: calc(100vw - 52px);
+    max-width: 322.5px;
+  }
   footer .footer {
     gap: 25px;
     padding: 25px;
