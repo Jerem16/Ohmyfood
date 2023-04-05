@@ -1,9 +1,9 @@
 @media screen and (max-width: 1440px) {
   body {
-    /* background-image: url(../img/Homepage_desk.jpg);
-    background-size: 1440px 1395px; */
-    background-image: url(../img/Menu\ La\ palette\ du\ gout.jpg);
-    background-size: 1440px 1705px;
+    background-image: url(../img/Homepage_desk.jpg);
+    background-size: 1440px 1395px;
+    /* background-image: url(../img/Menu\ La\ palette\ du\ gout.jpg);
+    background-size: 1440px 1705px; */
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -17,7 +17,7 @@
 @media screen and (max-width: 1438px) {
   body {
     background-image: url(../img/Homepage_desk);
-    background-image: url(../img/Menu\ La\ palette\ du\ gout_desk.jpg);
+    /* background-image: url(../img/Menu\ La\ palette\ du\ gout_desk); */
   }
   .wrapper {
     opacity: 1;
@@ -31,18 +31,18 @@
     color: blue;
   }
   body {
-    /* background-image: url(../img/Homepage_mobile.jpg);
-    background-size: 375px 2263px; */
-    background-image: url(../img/Menu\ -\ La\ palette\ du\ goût_mobile.jpg);
-    background-size: 375px 1593px;
+    background-image: url(../img/Homepage_mobile.jpg);
+    background-size: 375px 2263px;
+    /* background-image: url(../img/Menu\ -\ La\ palette\ du\ goût_mobile.jpg);
+    background-size: 375px 1593px; */
   }
 }
 
 @media screen and (max-width: 373px) {
   body {
     max-width: 374px;
-    /* background-image: url(../img/Homepage_mobile); */
-    background-image: url(../img/Menu\ -\ La\ palette\ du\ goût_mobile);
+    background-image: url(../img/Homepage_mobile);
+    /* background-image: url(../img/Menu\ -\ La\ palette\ du\ goût_mobile); */
   }
 
   .wrapper {

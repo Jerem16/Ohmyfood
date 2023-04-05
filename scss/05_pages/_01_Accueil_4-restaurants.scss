@@ -16,7 +16,6 @@
     margin: 54.75px 0 0 0;
     align-self: start;
   }
-  /* SECTION-SECONDAIRE*/
   .grid_restaurant {
     display: grid;
     grid-template-columns: 1fr;
@@ -196,7 +195,7 @@
   .unchecked:defined {
     -webkit-text-stroke: 1px transparent;
     animation: heart-stroke 0.05s backwards reverse;
-    -index: -1;
+    z-index: -1;
   }
 }
 

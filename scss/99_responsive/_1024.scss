@@ -87,7 +87,7 @@
     h2.font_h2_restaurants {
       margin: 26px 0 29px 0;
     }
-    /* SECTION-SECONDAIRE*/
+
     .grid_restaurant {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -221,7 +221,7 @@
     h2.font_h2_restaurants {
       margin: 26px 0 29px 0;
     }
-    /* SECTION-SECONDAIRE*/
+
     .grid_restaurant {
       padding: 0px 2.5775vw 144px 2.5775vw;
     }
@@ -254,7 +254,6 @@
   .margin {
     margin: 0 5.714vw;
     max-width: calc(1440px - 5.714vw * 2);
-    /* SECTION-SECONDAIRE*/
     .grid_restaurant {
       padding: 0px 2.5775vw 144px 2.5775vw;
       margin: -0px 0 0 0;
@@ -298,7 +297,6 @@
     margin: 0 7.826vw;
     max-width: calc(1440px - 7.826vw * 1.8);
 
-    /* SECTION-SECONDAIRE* calc(-18vw * 0.5vw) /*/
     .grid_restaurant {
       padding: 0px 2.5775vw 144px 2.5775vw;
       margin: -0px 0 0 0;
@@ -326,7 +324,6 @@
     .margin {
       margin: 0 100px;
       max-width: calc(1440px - 200px);
-      /* SECTION-SECONDAIRE*/
       .grid_restaurant {
         padding: 0px 2.5775vw 144px 2.5775vw;
         margin: -0px 0 0 0;
@@ -346,7 +343,6 @@
   }
   .margin {
     margin: 0 125px;
-    /* SECTION-SECONDAIRE*/
     .grid_restaurant {
       padding: 0px 0vw 144px 0vw;
       margin: -0px 0 0 0;
@@ -360,9 +356,6 @@
   }
   .margin {
     margin: 0 150px;
-    /* SECTION-SECONDAIRE*/
-    .grid_restaurant {
-    }
   }
 }
 @media screen and (min-width: 1390px) {

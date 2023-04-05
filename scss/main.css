@@ -103,6 +103,9 @@ a:visited {
   }
   */
 /***********************/
+/***********************/
+/*  Menu-Restaurants  */
+/***********************/
 /****** [Styles] ******/ /****** [Buttons] ******/ /****** [Form] ******/
 /*
 .form {
@@ -118,16 +121,16 @@ a:visited {
   }
 }
 */
-.custom-checkbox input[type="checkbox"],
+.custom-checkbox input[type=checkbox],
 .custom-checkbox .checked {
   display: none;
 }
 
-.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+.custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
 }
 
-.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+.custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
 }
 
@@ -173,7 +176,8 @@ a:visited {
   width: 163.5px;
   height: 44px;
   padding: 13px 1px 0 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   align-self: center;
 }
 .head__return {
@@ -305,10 +309,6 @@ footer .footer > a {
   width: 129px;
   padding: 7.75px 0px 6px 12px;
   background-color: transparent;
-  -webkit-border-radius: 0px 10px 10px 0px;
-  -moz-border-radius: 0px 10px 10px 0px;
-  -ms-border-radius: 0px 10px 10px 0px;
-  -o-border-radius: 0px 10px 10px 0px;
   border-radius: 0px 10px 10px 0px;
   /*Animation*/
   box-shadow: 0px 2px 4px inset rgba(0, 0, 0, 0);
@@ -327,13 +327,13 @@ footer .footer > a {
   line-height: 19px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
 }
-.search-location form button:hover + input,
-.search-location form button:hover,
+.search-location form button:hover + input, .search-location form button:hover,
 .search-location form button + input:hover + input,
 .search-location form button + input:hover {
   color: transparent;
   background: linear-gradient(90deg, #9356dc, #ff79da, #9356dc, #ff79da);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   z-index: 9;
   cursor: pointer;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -349,10 +349,6 @@ footer .footer > a {
   background-color: transparent;
   margin-right: -5px;
   margin-left: -4.5px;
-  -webkit-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  -ms-border-radius: 10px 0px 0px 10px;
-  -o-border-radius: 10px 0px 0px 10px;
   border-radius: 10px 0px 0px 10px;
   transition: all 300ms;
 }
@@ -373,9 +369,6 @@ footer .footer > a {
 /****** [ Accueil N°2 Presentation ] ******/
 .presentation {
   margin: auto;
-}
-.presentation a {
-  padding: 15px 21.5px 16px 21.5px;
 }
 
 .font_h1 {
@@ -408,6 +401,7 @@ footer .footer > a {
 }
 
 .local_style_gradient {
+  padding: 15px 21.5px 16px 21.5px;
   position: relative;
   z-index: 1;
   /* Shadow/Button */
@@ -420,8 +414,15 @@ footer .footer > a {
   text-align: center;
   color: #fff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   margin: 30px 0 58px 7px;
+  background: linear-gradient(-193.33deg, #ff79da -11.44%, #9356dc 123.93%);
+  /*
+  padding: 0;
+  margin: 29px 0 39px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  */
   cursor: pointer;
 }
 .local_style_gradient:hover {
@@ -445,11 +446,7 @@ footer .footer > a {
   border-radius: 25px;
   z-index: -1;
   opacity: 0;
-  background: linear-gradient(
-    193.33deg,
-    rgba(147, 86, 220, 0.8980392157) -11.44%,
-    rgba(255, 121, 218, 0.8980392157) 123.93%
-  );
+  background: linear-gradient(-193.33deg, rgba(255, 121, 218, 0.8980392157) -11.44%, rgba(147, 86, 220, 0.8980392157) 123.93%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   transition: all 450ms;
 }
@@ -565,9 +562,6 @@ footer .footer > a {
 }
 
 /* TITLE*/
-.margin {
-  /* SECTION-SECONDAIRE*/
-}
 .margin h2.font_h2_restaurants {
   font-weight: 700;
   font-size: 24px;
@@ -707,7 +701,8 @@ footer .footer > a {
   border: 1px solid white;
   margin: 19px 25px 0 21.5px;
   z-index: 10;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 .like .fa-heart {
@@ -719,7 +714,8 @@ footer .footer > a {
   cursor: pointer;
   color: transparent;
   background: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .like .fa-heart .unchecked,
 .like .fa-heart .checked {
@@ -730,7 +726,7 @@ footer .footer > a {
 .like .fa-heart .x {
   display: block;
   position: absolute;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(-193.33deg, #ff79da -11.44%, #9356dc 123.93%);
   width: 26px;
   height: 0%;
   max-height: 21.5px;
@@ -770,7 +766,8 @@ footer .footer > a {
   background-color: transparent;
   background: transparent;
   color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   width: 100%;
   height: 100%;
   background-size: text;
@@ -780,7 +777,7 @@ footer .footer > a {
 .luky:hover .unchecked:defined {
   -webkit-text-stroke: 1px transparent;
   animation: heart-stroke 0.05s backwards reverse;
-  -index: -1;
+  z-index: -1;
 }
 
 .luky:hover .checked {
@@ -792,12 +789,112 @@ footer .footer > a {
   height: 21px;
 }
 
+/****** [ Pages N° ] ******/
+.main {
+  width: 100%;
+  background-color: #fff;
+  margin: auto;
+  /*section-principal-*/
+}
+.main .head_img {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 265px;
+  height: 70.66vw;
+  max-height: 385px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: 110%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.main .gourmet_menu {
+  position: relative;
+  top: -45px;
+  width: 100%;
+  height: 500px;
+  max-width: 1055px;
+  background-color: #f7f7f7;
+  border-radius: 40px 40px 0px 0px;
+  margin: auto;
+  z-index: 2;
+  /*titre-h1*/
+  /*sous-section-*/
+}
+.main .gourmet_menu .h1_inline {
+  position: relative;
+  top: 32px;
+  display: grid;
+  grid-template-columns: 261px 30px;
+  grid-template-rows: 10px;
+  width: calc(100% - 7px);
+  max-width: 340px;
+  margin: auto;
+}
+.main .gourmet_menu .h1_inline .gourmet_h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  color: #101010;
+  width: 261px;
+  height: 40px;
+  margin: auto;
+}
+.main .gourmet_menu .h1_inline .like {
+  top: -14px;
+  margin-left: 7.8vw;
+  max-height: 21.5px;
+  border: 1px solid #f7f7f7;
+}
+.main .gourmet_menu .entree .h2_entree {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000;
+  padding-top: 150px;
+}
+.main .local_style_gradient {
+  padding: 0;
+  margin: 29px 0 39px 0;
+  flex-flow: column;
+  justify-content: center;
+  min-width: 146px;
+  padding: 15px 21.5px 16px 21.5px;
+}
+
 /****** --Media queries-- ******/
 /***!! Clearing-inf: 375px ****/
 @media screen and (max-width: 370px) {
   /****** [ Accueil N°3 Restaurants  ] ******/
   .card_restaurants:nth-child(2) {
     background-position: center calc(89% - 1.2666vw);
+  }
+  .main .gourmet_menu {
+    top: -13.78vw;
+  }
+  .main .head_img {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 265px;
+    height: 70.66vw;
+    max-height: 385px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    background-color: aquamarine;
+    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: 140%;
+    background-position: -80px -13.78vw;
+    background-repeat: no-repeat;
+    z-index: 0;
   }
 }
 @media screen and (max-width: 350px) {
@@ -971,9 +1068,6 @@ footer .footer > a {
   /****** [ Accueil N°3 Restaurants  ] ******/
   /* SECTION-PRINCIAL*/
   /* TITLE*/
-  .margin {
-    /* SECTION-SECONDAIRE*/
-  }
   .margin h2.font_h2_restaurants {
     margin: 26px 0 29px 0;
   }
@@ -1093,7 +1187,6 @@ footer .footer > a {
   .margin {
     margin: 0 5.155vw;
     max-width: calc(1440px - 10.31vw);
-    /* SECTION-SECONDAIRE*/
   }
   .margin h2.font_h2_restaurants {
     margin: 26px 0 29px 0;
@@ -1120,7 +1213,6 @@ footer .footer > a {
   .margin {
     margin: 0 5.714vw;
     max-width: calc(1440px - 11.428vw);
-    /* SECTION-SECONDAIRE*/
   }
   .margin .grid_restaurant {
     padding: 0px 2.5775vw 144px 2.5775vw;
@@ -1154,7 +1246,6 @@ footer .footer > a {
   .margin {
     margin: 0 7.826vw;
     max-width: calc(1440px - 14.0868vw);
-    /* SECTION-SECONDAIRE* calc(-18vw * 0.5vw) /*/
   }
   .margin .grid_restaurant {
     padding: 0px 2.5775vw 144px 2.5775vw;
@@ -1180,7 +1271,6 @@ footer .footer > a {
   .margin {
     margin: 0 100px;
     max-width: 1240px;
-    /* SECTION-SECONDAIRE*/
   }
   .margin .grid_restaurant {
     padding: 0px 2.5775vw 144px 2.5775vw;
@@ -1197,7 +1287,6 @@ footer .footer > a {
   }
   .margin {
     margin: 0 125px;
-    /* SECTION-SECONDAIRE*/
   }
   .margin .grid_restaurant {
     padding: 0px 0vw 144px 0vw;
@@ -1211,7 +1300,6 @@ footer .footer > a {
   }
   .margin {
     margin: 0 150px;
-    /* SECTION-SECONDAIRE*/
   }
 }
 @media screen and (min-width: 1390px) {
@@ -1317,9 +1405,6 @@ footer .footer > a {
   /****** [ Accueil N°3 Restaurants  ] ******/
   /* SECTION-PRINCIAL*/
   /* TITLE*/
-  .margin {
-    /* SECTION-SECONDAIRE*/
-  }
   .margin h2.font_h2_restaurants {
     margin: 26px 0 29px 0;
   }
@@ -1452,8 +1537,9 @@ footer .footer > a {
   }
   100% {
     color: transparent;
-    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    background-clip: text;
+    background: linear-gradient(-193.33deg, #ff79da -11.44%, #9356dc 123.93%);
+    -webkit-background-clip: text;
+            background-clip: text;
     background-position: 0% 50%;
     animation-timing-function: ease-out;
   }
@@ -1539,4 +1625,4 @@ footer .footer > a {
     color: #989898;
   }
 }
-/****** [ Slider ] ******/
+/****** [ Slider ] ******//*# sourceMappingURL=main.css.map */

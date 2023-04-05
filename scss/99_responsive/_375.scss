@@ -7,6 +7,26 @@
       background-position: center calc(89% + -1.2666vw);
     }
   }
+  .main {
+    .gourmet_menu {
+      top: -13.78vw;
+    }
+    .head_img {
+        width: 100%;
+        max-width: 1440px;
+        min-height: 265px;
+        height: 70.66vw;
+        max-height: 385px;
+        object-fit: cover;
+        object-position: center;
+        background-color: aquamarine;
+        background: $la_palette_du_gout;
+        background-size: 140%;
+        background-position: -80px -13.78vw;
+        background-repeat: no-repeat;
+        z-index: 0;
+      }
+  }
 }
 @media screen and (max-width: 350px) {
   /****** [ Accueil N°3 Restaurants  ] ******/
@@ -109,16 +129,16 @@
   }
 }
 @media screen and (min-width: 570px) {
-    .nav_content {
-        width: calc(322.5px - 32px);
-      }
-    .margin {
-      margin: 0 12.281vw;
-      max-width: calc(1440px - 12.281vw* 2);
-      .card_restaurants {
-        &:nth-child(2) {
-          background-position: center calc(-41vw * 0.8);
-        }
+  .nav_content {
+    width: calc(322.5px - 32px);
+  }
+  .margin {
+    margin: 0 12.281vw;
+    max-width: calc(1440px - 12.281vw * 2);
+    .card_restaurants {
+      &:nth-child(2) {
+        background-position: center calc(-41vw * 0.8);
       }
     }
   }
+}

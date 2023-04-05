@@ -95,3 +95,47 @@
   font-size: 16px;
   line-height: 19px;
 }
+
+/***********************/
+/*  Menu-Restaurants  */
+/***********************/
+@mixin h1_logo_menu {
+  font-family: "Shrikhand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  color: #101010;
+}
+
+@mixin h2_menu {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+@mixin card_menu-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-overflow: ellipsis;
+  /*
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  */
+}
+
+@mixin card_menu-description {
+  text-overflow: ellipsis;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  /*
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;*/
+}

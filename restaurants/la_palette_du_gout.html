@@ -12,7 +12,7 @@
     />
     <link
       rel="icon"
-      href="./assets/img/ico_logo_Ohmyfood.svg"
+      href="../assets/img/ico_logo_Ohmyfood.svg"
       type="image/svg+xml"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,8 +58,45 @@
           /></a>
         </div>
       </header>
-      <!-- MAIN -->
 
+      <!-- MAIN -->
+      <main class="main flex-col_c">
+        <div class="head_img"></div>
+        <section class="gourmet_menu">
+          <div class="h1_inline">
+            <h1 class="gourmet_h1">La palette du goût</h1>
+            <div class="like">
+              <img
+                src="../assets/img/cache_marie_heart_grey.svg"
+                alt="cache_marie_heart"
+              />
+              <form method="get" action="./restaurants/la_palette_du_gout.html">
+                <label class="custom-checkbox luky" for="la_palette_du_gout">
+                  <input
+                    type="checkbox"
+                    name="la_palette_du_gout"
+                    id="la_palette_du_gout"
+                  />
+                  <i class="fa-sharp fa-solid fa-heart unchecked">
+                    <span class="x"></span>
+                  </i>
+                  <i class="fa-sharp fa-solid fa-heart checked">
+                    <span class="x"></span>
+                  </i>
+                  <span class="hidden">like</span>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <article class="entree">
+            <h2 class="h2_entree">Entrées</h2>
+          </article>
+        </section>
+        <a href="#menu_restaurants" class="btn local_style_gradient">
+          Commander
+        </a>
+      </main>
       <!-- FOOTER -->
 
       <footer>

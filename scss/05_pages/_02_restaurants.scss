@@ -1,0 +1,74 @@
+/****** [ Pages N° ] ******/
+.main {
+  width: 100%;
+
+  background-color: $color-white;
+  margin: auto;
+
+  .head_img {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 265px;
+    height: 70.66vw;
+    max-height: 385px;
+    object-fit: cover;
+    object-position: center;
+    background: $la_palette_du_gout;
+    background-size: 110%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  /*section-principal-*/
+  .gourmet_menu {
+    position: relative;
+    top: -45px;
+    width: 100%;
+    height: 500px;
+    max-width: 1055px;
+    background-color: #f7f7f7;
+    border-radius: 40px 40px 0px 0px;
+    margin: auto;
+    z-index: 2;
+    /*titre-h1*/
+    .h1_inline {
+      position: relative;
+      top: 32px;
+      display: grid;
+      grid-template-columns: 261px 30px;
+      grid-template-rows: 10px;
+      width: calc(100% - 7px);
+      max-width: 340px;
+
+      margin: auto;
+      .gourmet_h1 {
+        @include h1_logo_menu;
+        width: 261px;
+        height: 40px;
+        margin: auto;
+      }
+      .like {
+        top: -14px;
+        margin-left: 7.8vw;
+        max-height: 21.5px;
+        border: 1px solid #f7f7f7;
+      }
+    } /*sous-section-*/
+    .entree {
+      .h2_entree {
+        @include h2_menu;
+        color: #000;
+        padding-top: 150px;
+      }
+    }
+  }
+
+  .local_style_gradient {
+    padding: 0;
+    margin: 29px 0 39px 0;
+    flex-flow: column;
+    justify-content: center;
+    min-width: 146px;
+    padding: 15px 21.5px 16px 21.5px;
+  }
+}
