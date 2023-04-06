@@ -30,8 +30,22 @@
     position: relative;
     max-width: 490px;
     @include card_restaurants;
+    opacity: 0.95;
+    transition: all 0.3s;
+    &::after {
+      @include pseudo-pos;
+      z-index: -1;
+      transition: all 0.3s;
+    }
     &:hover {
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      opacity: 1;
+      z-index: 2;
+      &::after {
+        @include pseudo-pos;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        z-index: -1;
+      }
       .new_card {
         -webkit-text-stroke: 0.25px $color-green-font;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -57,6 +71,10 @@
           transition: all 300ms;
         }
       }
+    }
+    .grow {
+      width: 100%;
+      height: 200%;
     }
     &:nth-child(1) {
       background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);

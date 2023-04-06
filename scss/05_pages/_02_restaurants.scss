@@ -31,7 +31,7 @@
     margin: auto;
     z-index: 2;
     /*titre-h1*/
-    .h1_inline {
+    &--title {
       position: relative;
       top: 32px;
       display: grid;
@@ -39,9 +39,8 @@
       grid-template-rows: 10px;
       width: calc(100% - 7px);
       max-width: 340px;
-
       margin: auto;
-      .gourmet_h1 {
+      &_h1 {
         @include h1_logo_menu;
         width: 261px;
         height: 40px;
@@ -54,11 +53,82 @@
         border: 1px solid #f7f7f7;
       }
     } /*sous-section-*/
-    .entree {
-      .h2_entree {
-        @include h2_menu;
-        color: #000;
-        padding-top: 150px;
+  }
+  .starter,
+  .main_course,
+  .dessert {
+    &_h2 {
+      @include h2_menu;
+      color: #000;
+      border-bottom: 3.5px solid $color-tertiary;
+      margin: 90px 0 0 13px;
+      padding: 0 0 5px;
+      max-width: 40px;
+    }
+    &_contener {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      height: 100px;
+      background-color: red;
+      z-index: 999;
+      box-sizing: border-box;
+      border-left: 50px solid black;
+      border-right: 50px solid black;
+    }
+
+    &_card {
+      position: relative;
+      z-index: 999;
+      right: 0px;
+      left: 0;
+
+      width: 100%; //ici 500px + 59px
+      height: 69px;
+      //max-width: 634px;
+      border-radius: 15px;
+      background: green;
+      box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+      transition: all 1ms;
+
+      cursor: pointer;
+
+      &::after {
+        @include pseudo-pos;
+        width: 0px;
+        height: 69px;
+        left: calc(100% - 59px); //ici 500px
+        top: 0px;
+        right: 50px;
+        background: #99e2d0;
+        border-radius: 0px 15px 15px 0px;
+        z-index: -2;
+        transition: all 1ms;
+      }
+      
+      &:not(:active) {
+        animation: selector 500ms backwards running;
+        &::after {
+          animation: after_selector 500ms backwards;
+        }
+      }
+      &:active {
+        animation: selector 500ms forwards;
+        &::after {
+          animation: after_selector 500ms forwards;
+        }
+      }
+
+      &:hover {
+        animation: selector 760ms 140ms forwards;
+        &::after {
+          animation: after_selector 760ms 140ms forwards;
+        }
+      }
+      &--title {
+      }
+      &--description {
       }
     }
   }

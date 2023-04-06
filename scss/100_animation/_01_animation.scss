@@ -126,3 +126,29 @@
     color: lightness-shift($color-nav-ico);
   }
 }
+
+@keyframes selector {
+  0% {
+  }
+  100% {
+    width: calc(100% - 59px); //ici
+    right: 0;
+    border-radius: 15px 0 0 15px;
+    z-index: 999;
+  }
+}
+
+@keyframes after_selector {
+  0% {
+  }
+  100% {
+    z-index: 1;
+    width: 59px;
+    height: 69px;
+    left: calc(100% - 0px); //ici 500px
+    top: 0px;
+    right: 59px; //ici 59px
+    background: #99e2d0;
+    border-radius: 0px 15px 15px 0px;
+  }
+}

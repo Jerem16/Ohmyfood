@@ -596,9 +596,33 @@ footer .footer > a {
   height: 251px;
   width: 100%;
   /* desktop */
+  opacity: 0.95;
+  transition: all 0.3s;
+}
+.margin .card_restaurants::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
 }
 .margin .card_restaurants:hover {
+  opacity: 1;
+  z-index: 2;
+}
+.margin .card_restaurants:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  z-index: -1;
 }
 .margin .card_restaurants:hover .new_card {
   -webkit-text-stroke: 0.25px #008766;
@@ -637,6 +661,10 @@ footer .footer > a {
 .margin .card_restaurants .new_card:hover::after {
   opacity: 0.75;
   transition: all 300ms;
+}
+.margin .card_restaurants .grow {
+  width: 100%;
+  height: 200%;
 }
 .margin .card_restaurants:nth-child(1) {
   background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -826,7 +854,7 @@ footer .footer > a {
   /*titre-h1*/
   /*sous-section-*/
 }
-.main .gourmet_menu .h1_inline {
+.main .gourmet_menu--title {
   position: relative;
   top: 32px;
   display: grid;
@@ -836,7 +864,7 @@ footer .footer > a {
   max-width: 340px;
   margin: auto;
 }
-.main .gourmet_menu .h1_inline .gourmet_h1 {
+.main .gourmet_menu--title_h1 {
   font-family: "Shrikhand", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -847,19 +875,101 @@ footer .footer > a {
   height: 40px;
   margin: auto;
 }
-.main .gourmet_menu .h1_inline .like {
+.main .gourmet_menu--title .like {
   top: -14px;
   margin-left: 7.8vw;
   max-height: 21.5px;
   border: 1px solid #f7f7f7;
 }
-.main .gourmet_menu .entree .h2_entree {
+.main .starter_h2,
+.main .main_course_h2,
+.main .dessert_h2 {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: #000;
-  padding-top: 150px;
+  border-bottom: 3.5px solid #99e2d0;
+  margin: 90px 0 0 13px;
+  padding: 0 0 5px;
+  max-width: 40px;
+}
+.main .starter_contener,
+.main .main_course_contener,
+.main .dessert_contener {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  z-index: 999;
+  box-sizing: border-box;
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+}
+.main .starter_card,
+.main .main_course_card,
+.main .dessert_card {
+  position: relative;
+  z-index: 999;
+  right: 0px;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  background: green;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  transition: all 1ms;
+  cursor: pointer;
+}
+.main .starter_card::after,
+.main .main_course_card::after,
+.main .dessert_card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 69px;
+  left: calc(100% - 59px);
+  top: 0px;
+  right: 50px;
+  background: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  z-index: -2;
+  transition: all 1ms;
+}
+.main .starter_card:not(:active),
+.main .main_course_card:not(:active),
+.main .dessert_card:not(:active) {
+  animation: selector 500ms backwards running;
+}
+.main .starter_card:not(:active)::after,
+.main .main_course_card:not(:active)::after,
+.main .dessert_card:not(:active)::after {
+  animation: after_selector 500ms backwards;
+}
+.main .starter_card:active,
+.main .main_course_card:active,
+.main .dessert_card:active {
+  animation: selector 500ms forwards;
+}
+.main .starter_card:active::after,
+.main .main_course_card:active::after,
+.main .dessert_card:active::after {
+  animation: after_selector 500ms forwards;
+}
+.main .starter_card:hover,
+.main .main_course_card:hover,
+.main .dessert_card:hover {
+  animation: selector 760ms 140ms forwards;
+}
+.main .starter_card:hover::after,
+.main .main_course_card:hover::after,
+.main .dessert_card:hover::after {
+  animation: after_selector 760ms 140ms forwards;
 }
 .main .local_style_gradient {
   padding: 0;
@@ -1621,6 +1731,26 @@ footer .footer > a {
     transform: translate(0px, -5px) rotate3d(0, 0, 0, 1turn);
     animation-timing-function: ease-out;
     color: #989898;
+  }
+}
+@keyframes selector {
+  100% {
+    width: calc(100% - 59px);
+    right: 0;
+    border-radius: 15px 0 0 15px;
+    z-index: 999;
+  }
+}
+@keyframes after_selector {
+  100% {
+    z-index: 1;
+    width: 59px;
+    height: 69px;
+    left: calc(100% - 0px);
+    top: 0px;
+    right: 59px;
+    background: #99e2d0;
+    border-radius: 0px 15px 15px 0px;
   }
 }
 /****** [ Slider ] ******/
