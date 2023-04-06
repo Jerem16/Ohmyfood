@@ -7,7 +7,7 @@
     <title>OhMyFood | La palette du goût</title>
     <link
       rel="icon"
-      href="./assets/img/ico_logo_Ohmyfood.png"
+      href="../assets/img/ico_logo_Ohmyfood.png"
       sizes="256x256"
     />
     <link
@@ -29,7 +29,7 @@
     <!-- <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../scss/main.css" /> -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <!-- <link rel="stylesheet" href="../assets/css/prefixed/style_prefixed.css" /> -->
+    <link rel="stylesheet" href="../assets/css/prefixed/style_prefixed.css" />
     <link rel="stylesheet" href="../assets/css/maquette_demo.css" />
     <script
       src="https://kit.fontawesome.com/98008fddce.js"
@@ -61,8 +61,12 @@
 
       <!-- MAIN -->
       <main class="main flex-col_c">
-        <div class="head_img"></div>
+        <!-- img-main -->
+        <div class="head_img pallette"></div>
+
+        <!-- section-main -->
         <section class="gourmet_menu">
+          <!-- [h1+heart]-main -->
           <div class="gourmet_menu--title">
             <h1 class="gourmet_menu--title_h1">La palette du goût</h1>
             <div class="like">
@@ -89,18 +93,165 @@
             </div>
           </div>
 
+          <!-- section-annex-starter -->
           <section class="starter">
             <h2 class="starter_h2">Entrées</h2>
+
+            <!-- card -->
             <div class="starter_contener">
-              <a class="hover">
-                <article class="starter_card"></article>
-              </a>
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+
+              <article class="starter_contener_card">
+                <h3 class="starter_contener_card--title">
+                  Fricassée d'escargots
+                </h3>
+                <p class="starter_contener_card--description">
+                  Au piment d'Espelette
+                </p>
+                <p class="starter_contener_card--price">25€</p>
+              </article>
+            </div>
+
+            <!-- card -->
+            <div class="starter_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+              <article class="starter_contener_card">
+                <h3 class="starter_contener_card--title">
+                  Foie gras de canard mi-cuit
+                </h3>
+                <p class="starter_contener_card--description">
+                  Et ses copeaux de truffe noire
+                </p>
+                <p class="starter_contener_card--price">35€</p>
+              </article>
+            </div>
+
+            <!-- card -->
+            <div class="starter_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+              <article class="starter_contener_card">
+                <h3 class="starter_contener_card--title">Œuf au plat</h3>
+                <p class="starter_contener_card--description">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+                <p class="starter_contener_card--price">20€</p>
+              </article>
             </div>
           </section>
+
+          <!-- section-annex-main-course -->
+          <section class="main-course">
+            <h2 class="main-course_h2">Plats</h2>
+
+            <!-- card -->
+            <div class="main-course_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+
+              <article class="main-course_contener_card">
+                <h3 class="starter_contener_card--title">
+                  Filet de bœuf aux herbes
+                </h3>
+                <p class="starter_contener_card--description">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+                <p class="starter_contener_card--price">40€</p>
+              </article>
+            </div>
+
+            <!-- card -->
+            <div class="main-course_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+              <article class="main-course_contener_card">
+                <h3 class="main-course_contener_card--title">
+                  Parmentier de queue de bœuf
+                </h3>
+                <p class="main-course_contener_card--description">
+                  À la truffe noire sur sa purée de panais
+                </p>
+                <p class="main-course_contener_card--price">35€</p>
+              </article>
+            </div>
+
+            <!-- card -->
+            <div class="main-course_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+              <article class="main-course_contener_card">
+                <h3 class="main-course_contener_card--title">
+                  Filet de turbot
+                </h3>
+                <p class="main-course_contener_card--description">
+                  Aux agrumes
+                </p>
+                <p class="main-course_contener_card--price">44€</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- section-annex-dessert -->
+          <section class="dessert">
+            <h2 class="dessert_h2">Desserts</h2>
+
+            <!-- card -->
+            <div class="dessert_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+
+              <article class="dessert_contener_card">
+                <h3 class="dessert_contener_card--title">Paris-Brest</h3>
+                <p class="dessert_contener_card--description">Revisité</p>
+                <p class="dessert_contener_card--price">18€</p>
+              </article>
+            </div>
+
+            <!-- card -->
+            <div class="dessert_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+              <article class="dessert_contener_card">
+                <h3 class="dessert_contener_card--title">
+                  Macaron au chocolat d'exception
+                </h3>
+                <p class="dessert_contener_card--description">
+                  Et glace à la vanille de Madagascar
+                </p>
+                <p class="dessert_contener_card--price">22€</p>
+              </article>
+            </div>
+
+            <!-- card -->
+            <div class="dessert_contener">
+              <div class="starter_contener--icone">
+                <i class="fa-sharp fa-regular fa-circle-check"></i>
+              </div>
+              <article class="dessert_contener_card">
+                <h3 class="dessert_contener_card--title">Mousse au chocolat</h3>
+                <p class="dessert_contener_card--description">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+                <p class="dessert_contener_card--price">23€</p>
+              </article>
+            </div>
+          </section>
+          <a href="#" class="btn local_style_gradient footer--corection"
+            >Commander</a
+          >
         </section>
-        <a href="#menu_restaurants" class="btn local_style_gradient">
-          Commander
-        </a>
+
+        <!-- button -->
       </main>
       <!-- FOOTER -->
 

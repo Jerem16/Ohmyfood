@@ -9,6 +9,7 @@
 
   form {
     display: block;
+    padding-left: 16px;
 
     .ico_location,
     input {
@@ -22,8 +23,8 @@
     .input-research {
       position: relative;
       top: -0.25px;
-      width: 129px;
-      padding: 7.75px 0px 6px 12px;
+      width: 140px;
+      padding: 7.75px 9px 6px 12px;
       background-color: transparent;
       @include bord-rad_input-research;
       /*Animation*/

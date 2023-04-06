@@ -12,9 +12,6 @@
   .head {
     &__return {
     }
-    .hidden {
-      display: none;
-    }
   }
 }
 .head {
@@ -33,7 +30,15 @@
     align-self: center;
   }
   &__return {
-    display: none;
     cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 24px;
+    top: 22px;
+    font-size: 1.2258em;
+    color: $color-logo-font;
+    align-self: flex-start;
   }
 }

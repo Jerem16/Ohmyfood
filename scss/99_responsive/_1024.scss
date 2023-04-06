@@ -1,6 +1,20 @@
 /****** --Media queries-- ******/
 /***!! [--1024px--] ****/
 @media screen and (min-width: 768px) {
+  .main {
+    .a_la_french {
+      background: $a_la_french center -23vw no-repeat;
+      background-size: cover;
+    }
+    .la_note {
+        background: $la_note_enchantee center top no-repeat;
+        background-size: 100%;
+      }
+      .le_delice {
+        background: $le_delice_des_sens center bottom no-repeat;
+        background-size: 100%;
+      }
+  }
   .nav_content {
     max-width: calc(322.5px - 52px);
   }
@@ -191,6 +205,12 @@
   }
 }
 @media screen and (min-width: 820px) {
+    .main {
+        .la_note {
+            background: $la_note_enchantee center no-repeat;
+            background-size: 100%;
+          }
+      }
   footer {
     .footer {
       gap: 25px 6.51vw;

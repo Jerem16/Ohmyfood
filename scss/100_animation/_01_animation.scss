@@ -129,20 +129,24 @@
 
 @keyframes selector {
   0% {
+    border-radius: 15px;
+  }
+  2% {
+    border-radius: 15px 0 0 15px;
   }
   100% {
     width: calc(100% - 59px); //ici
     right: 0;
     border-radius: 15px 0 0 15px;
-    z-index: 999;
   }
 }
 
 @keyframes after_selector {
   0% {
   }
+
   100% {
-    z-index: 1;
+    z-index: 100;
     width: 59px;
     height: 69px;
     left: calc(100% - 0px); //ici 500px

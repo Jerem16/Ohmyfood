@@ -12,20 +12,31 @@
       top: -13.78vw;
     }
     .head_img {
-        width: 100%;
-        max-width: 1440px;
-        min-height: 265px;
-        height: 70.66vw;
-        max-height: 385px;
-        object-fit: cover;
-        object-position: center;
-        background-color: aquamarine;
-        background: $la_palette_du_gout;
-        background-size: 140%;
-        background-position: -80px -13.78vw;
-        background-repeat: no-repeat;
-        z-index: 0;
+      width: 100%;
+      max-width: 1440px;
+      min-height: 265px;
+      height: 70.66vw;
+      max-height: 385px;
+      object-fit: cover;
+      object-position: center;
+      background-color: aquamarine;
+      background: $la_palette_du_gout;
+      background-size: 140%;
+      background-position: -80px -13.78vw;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+  }
+  /*** ----Restarants--- ***/
+  .main {
+    .gourmet_menu {
+      /*titre-h1*/
+      &--title {
+        .like {
+          margin-left: 4.8vw;
+        }
       }
+    }
   }
 }
 @media screen and (max-width: 350px) {

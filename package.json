@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./scss/main.scss:./assets/css/style.css --style expanded --no-source-map",
-    "copy": "sass --watch ./assets/css/style.css:./assets/css/prefixed/style_prefixed.css --style expanded --no-source-map",
+    "copy": "sass --watch ./scss/main.scss:./assets/css/prefixed/style_prefixed.css --style expanded --no-source-map",
     "prefix": "postcss ./assets/css/prefixed/style_prefixed.css  --use=autoprefixer --replace ./assets/css/prefixed/style_prefixed.css"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 100 versions"
+  "browserslist": "last 10 versions"
 }

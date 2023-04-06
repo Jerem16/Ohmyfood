@@ -3,6 +3,16 @@
 
 /***!! Clearing-inf:1440px ****/
 @media screen and (min-width: 1440px) {
+  .main {
+    .a_la_french {
+      background: $a_la_french -40px -469px no-repeat;
+      background-size: 120%;
+    }
+    .le_delice {
+      background: $le_delice_des_sens center -356px no-repeat;
+      background-size: 100%;
+    }
+  }
   /****** --Media queries-- ******/
   .margin {
     margin: 0 0px;
@@ -135,7 +145,8 @@
   footer {
     width: calc(0px + 100%);
     position: absolute;
-    bottom: 0;
+    height: 114px;
+    margin-top: -114px;
 
     .footer {
       align-self: flex-start;
@@ -185,6 +196,61 @@
         margin-left: -23px;
       }
     }
+  }
+
+  /*** ----Restarants--- ***/
+  .main {
+    .pallette {
+      background: $la_palette_du_gout left -334px no-repeat;
+      background-size: 100%;
+    }
+    .gourmet_menu {
+      position: relative;
+      padding-bottom: 60px;
+      /*titre-h1*/
+      &--title {
+        top: 54px;
+        width: 309px;
+        .like {
+          top: -12px;
+          margin-left: 20px;
+        }
+      }
+      .starter {
+        padding: 35px 0 40px 0;
+      }
+    }
+    .starter,
+    .main-course,
+    .dessert {
+      &_h2 {
+        margin: 0;
+      }
+      &_contener {
+        $border: 0px;
+        border-left: $border solid transparent;
+        border-right: $border solid transparent;
+        &_card {
+          &--title {
+            padding: 13px 48px 0 15px;
+          }
+          &--description {
+            padding: 4px 0 0 15px;
+          }
+          &--price {
+            @include card_menu-price;
+            padding: 3.5px 0 0 22px;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+    }
+  }
+  .local_style_gradient {
+    flex-flow: column;
+    justify-content: center;
+    min-width: 146px;
+    padding: 15px 21.5px 16px 21.5px;
   }
 }
 

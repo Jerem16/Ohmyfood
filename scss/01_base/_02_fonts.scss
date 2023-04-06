@@ -119,23 +119,22 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  text-overflow: ellipsis;
-  /*
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  */
 }
 
 @mixin card_menu-description {
-  text-overflow: ellipsis;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
-  /*
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;*/
+}
+
+@mixin card_menu-price {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
 }
