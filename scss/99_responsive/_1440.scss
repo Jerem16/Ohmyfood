@@ -5,11 +5,13 @@
 @media screen and (min-width: 1440px) {
   .main {
     .a_la_french {
-      background: $a_la_french -40px -469px no-repeat;
+      background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)-40px -469px
+        no-repeat;
       background-size: 120%;
     }
     .le_delice {
-      background: $le_delice_des_sens center -356px no-repeat;
+      background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+        center -356px no-repeat;
       background-size: 100%;
     }
   }
@@ -201,7 +203,8 @@
   /*** ----Restarants--- ***/
   .main {
     .pallette {
-      background: $la_palette_du_gout left -334px no-repeat;
+      background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+        left -334px no-repeat;
       background-size: 100%;
     }
     .gourmet_menu {

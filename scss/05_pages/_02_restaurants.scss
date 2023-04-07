@@ -13,20 +13,24 @@
     min-height: 265px;
     max-height: 385px;
   }
-  .a_la_french {
-    background: $a_la_french center bottom no-repeat;
+  .main .a_la_french {
+    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
+      center bottom no-repeat;
     background-size: 100%;
   }
-  .pallette {
-    background: $la_palette_du_gout center top no-repeat;
+  .main .pallette {
+    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+      center top no-repeat;
     background-size: 110%;
   }
-  .la_note {
-    background: $la_note_enchantee center no-repeat;
+  .main .la_note {
+    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center
+      no-repeat;
     background-size: 100%;
   }
-  .le_delice {
-    background: $le_delice_des_sens center top no-repeat;
+  .main .le_delice {
+    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+      center top no-repeat;
     background-size: 100%;
   }
   /*section-principal-*/
