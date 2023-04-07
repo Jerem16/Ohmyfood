@@ -45,6 +45,7 @@
       &:hover {
         color: transparent;
         background: $anime_linear-gradient;
+        -webkit-background-clip: text;
         background-clip: text;
         z-index: 9;
         cursor: pointer;

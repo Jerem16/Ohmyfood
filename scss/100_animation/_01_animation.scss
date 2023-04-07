@@ -29,15 +29,14 @@
   70% {
     background-clip: border-box;
     animation-timing-function: linear;
-  }
-  70% {
     color: $color-primary;
     background: $bg-color-localization;
   }
   100% {
     color: transparent;
     background: $bg_linear-gradient;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     background-position: 0% 50%;
     animation-timing-function: ease-out;
   }

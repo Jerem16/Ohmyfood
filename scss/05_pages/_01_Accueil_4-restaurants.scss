@@ -77,25 +77,25 @@
       height: 200%;
     }
     &:nth-child(1) {
-      background-image: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+      background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
       background-size: 102.5% 97.5%;
       background-position: center -65px;
       background-repeat: no-repeat;
     }
     &:nth-child(2) {
-      background-image: url(../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+      background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
       background-size: cover;
       background-position: center -41vw;
       background-repeat: no-repeat;
     }
     &:nth-child(3) {
-      background-image: url(../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+      background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
       background-size: 102% 93.5%;
       background-position: center -60px;
       background-repeat: no-repeat;
     }
     &:nth-child(4) {
-      background-image: url(../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+      background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
       background-size: 100% 94.1%;
       background-position: center -60px;
       background-repeat: no-repeat;
@@ -152,7 +152,8 @@
     color: transparent;
 
     background: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     .unchecked,
     .checked {
       background: transparent;
@@ -200,9 +201,10 @@
     display: block;
     position: absolute;
     background-color: transparent;
-    background: transparent;
+    background-image: transparent;
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     width: 100%;
     height: 100%;
     max-height: 21.5px;

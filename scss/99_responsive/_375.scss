@@ -1,5 +1,29 @@
 /****** --Media queries-- ******/
 /***!! Clearing-inf: 375px ****/
+
+@media screen and (max-width: 350px) {
+  /****** [ Accueil N°3 Restaurants  ] ******/
+  .card_restaurants {
+    &:nth-child(2) {
+      background-position: center calc(89% + -2.27666vw);
+    }
+  }
+}
+@media screen and (max-width: 335px) {
+  /****** [ Accueil N°2 Presentation ] ******/
+  .font_h1 {
+    margin: 40px 10px 1px 10px;
+  }
+  .font_h1_p {
+    margin: 12px 10px 1px 10px;
+  }
+  /****** [ Accueil N°3 Restaurants  ] ******/
+  .card_restaurants {
+    &:nth-child(2) {
+      background-position: center calc(89% - 18.5px);
+    }
+  }
+}
 @media screen and (max-width: 370px) {
   /****** [ Accueil N°3 Restaurants  ] ******/
   .card_restaurants {
@@ -24,6 +48,11 @@
       background-size: 140%;
       background-position: -80px -13.78vw;
     }
+    .le_delice {
+      background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+        center top no-repeat;
+      background-size: 110%;
+    }
   }
   /*** ----Restarants--- ***/
   .main {
@@ -34,29 +63,6 @@
           margin-left: 4.8vw;
         }
       }
-    }
-  }
-}
-@media screen and (max-width: 350px) {
-  /****** [ Accueil N°3 Restaurants  ] ******/
-  .card_restaurants {
-    &:nth-child(2) {
-      background-position: center calc(89% + -2.27666vw);
-    }
-  }
-}
-@media screen and (max-width: 335px) {
-  /****** [ Accueil N°2 Presentation ] ******/
-  .font_h1 {
-    margin: 40px 10px 1px 10px;
-  }
-  .font_h1_p {
-    margin: 12px 10px 1px 10px;
-  }
-  /****** [ Accueil N°3 Restaurants  ] ******/
-  .card_restaurants {
-    &:nth-child(2) {
-      background-position: center calc(89% - 18.5px);
     }
   }
 }
