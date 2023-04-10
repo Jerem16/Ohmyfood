@@ -1,44 +1,4 @@
 @charset "UTF-8";
-/*** Background ***/
-/*** Fonts ***/ /*** Border-raduis ***/
-/*
-@mixin border($colour: $colour-primary) {
-  border: 0.1rem solid $colour;
-}
-/*** Animation::after ***/
-/*
-@mixin img-ratio {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-  & img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-
-@mixin btn {
-  padding: $grid-gutter;
-  @include border;
-  color: $colour-primary;
-  background: $colour-secondary;
-  cursor: pointer;
-  &:hover {
-    background: $colour-primary;
-    color: $colour-accent;
-  }
-  &--full-width {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-*/
 /****** [General] ******/
 * {
   font-family: "Roboto", sans-serif;
@@ -88,49 +48,16 @@ a:visited {
   width: 100%;
   max-width: 1120px;
 }
-
-/****** Fonts ******/
-/***********************/
-/********************/
-/***********************/
-/***********************/
-/*
-@mixin font_h2_acceuil {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.5px;
-  }
-  */
-/***********************/
-/***********************/
-/*  Menu-Restaurants  */
-/***********************/
-/****** [Styles] ******/ /****** [Buttons] ******/ /****** [Form] ******/
-/*
-.form {
-  &__heading {
-  }
-  &__field {
-    & label {
-    }
-    & input {
-    }
-    & textarea {
-    }
-  }
-}
-*/
-.custom-checkbox input[type=checkbox],
+.custom-checkbox input[type="checkbox"],
 .custom-checkbox .checked {
   display: none;
 }
 
-.custom-checkbox input[type=checkbox]:checked ~ .checked {
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
   display: inline-block;
 }
 
-.custom-checkbox input[type=checkbox]:checked ~ .unchecked {
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
   display: none;
 }
 
@@ -187,26 +114,6 @@ a:visited {
   color: #101010;
   align-self: flex-start;
 }
-
-/****** [Nav] ******/
-/*
-.nav {
-
-    &__link {
-        & a{
-        }
-        &--active {
-
-            &:hover{
-
-            }
-        }
-        & a:hover{
-
-        }
-    }
-}
-*/
 /****** [Footer] ******/
 footer {
   background-color: #353535;
@@ -214,6 +121,7 @@ footer {
   width: 100vw;
   margin: auto;
   padding: 21.75px 25px 22px 25px;
+  box-sizing: border-box;
 }
 footer .footer {
   display: flex;
@@ -234,8 +142,7 @@ footer .footer > a {
   margin-bottom: 16.5px;
   max-width: 138.5px;
 }
-
-.footer_subscription {
+footer .footer .footer_subscription {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -245,37 +152,36 @@ footer .footer > a {
   height: 50px;
   margin: 0;
 }
-.footer_subscription a {
+footer .footer .footer_subscription a {
   margin-bottom: 8px;
 }
-.footer_subscription a:nth-child(1) > i {
+footer .footer .footer_subscription a:nth-child(1) > i {
   font-size: 13px;
   padding-right: 6px;
 }
-.footer_subscription a:nth-child(2) > i {
+footer .footer .footer_subscription a:nth-child(2) > i {
   font-size: 12px;
   padding-right: 2px;
 }
-.footer_subscription:hover a {
+footer .footer:hover a {
   max-width: 190px;
   transition: all 720ms ease-in-out;
   color: #989898;
 }
-.footer_subscription:hover a:hover {
+footer .footer:hover a:hover {
   transition: all 350ms ease-in-out;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
   color: #fff;
 }
-.footer_subscription:hover a:nth-child(1):hover > i {
+footer .footer:hover a:nth-child(1):hover > i {
   transform: rotate3d(0, 1, 0, 1turn);
   animation: utensils 1330ms 330ms 2 alternate-reverse;
 }
-.footer_subscription:hover a:nth-child(2):hover > i {
+footer .footer:hover a:nth-child(2):hover > i {
   transform: rotate(0deg);
   animation: handshake 2030ms 1 linear;
 }
-
-.footer_contact {
+footer .footer .footer_contact {
   display: flex;
   flex-flow: column;
   font-weight: 400;
@@ -313,10 +219,6 @@ footer .footer > a {
   width: 140px;
   padding: 7.75px 9px 6px 12px;
   background-color: transparent;
-  -webkit-border-radius: 0px 10px 10px 0px;
-  -moz-border-radius: 0px 10px 10px 0px;
-  -ms-border-radius: 0px 10px 10px 0px;
-  -o-border-radius: 0px 10px 10px 0px;
   border-radius: 0px 10px 10px 0px;
   /*Animation*/
   box-shadow: 0px 2px 4px inset rgba(0, 0, 0, 0);
@@ -335,7 +237,8 @@ footer .footer > a {
   line-height: 19px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
 }
-.search-location form button:hover + input, .search-location form button:hover,
+.search-location form button:hover + input,
+.search-location form button:hover,
 .search-location form button + input:hover + input,
 .search-location form button + input:hover {
   color: transparent;
@@ -357,10 +260,6 @@ footer .footer > a {
   background-color: transparent;
   margin-right: -5px;
   margin-left: -4.5px;
-  -webkit-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  -ms-border-radius: 10px 0px 0px 10px;
-  -o-border-radius: 10px 0px 0px 10px;
   border-radius: 10px 0px 0px 10px;
   transition: all 300ms;
 }
@@ -412,7 +311,8 @@ footer .footer > a {
   background-color: transparent;
 }
 
-.local_style_gradient {
+.local_style_gradient,
+.local_style_gradient2 {
   padding: 15px 21.5px 16px 21.5px;
   position: relative;
   z-index: 1;
@@ -428,27 +328,24 @@ footer .footer > a {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   margin: 30px 0 58px 7px;
   background: linear-gradient(-193.33deg, #ff79da -11.44%, #9356dc 123.93%);
-  /*
-  padding: 0;
-  margin: 29px 0 39px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  */
   cursor: pointer;
 }
-.local_style_gradient:hover {
+.local_style_gradient:hover,
+.local_style_gradient2:hover {
   color: #fff;
 }
-.local_style_gradient:hover::after {
+.local_style_gradient:hover::after,
+.local_style_gradient2:hover::after {
   opacity: 1;
   background-color: white;
   transition: all 300ms;
 }
-.local_style_gradient:visited {
+.local_style_gradient:visited,
+.local_style_gradient2:visited {
   color: #fff;
 }
-.local_style_gradient::after {
+.local_style_gradient::after,
+.local_style_gradient2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -458,7 +355,11 @@ footer .footer > a {
   border-radius: 25px;
   z-index: -1;
   opacity: 0;
-  background: linear-gradient(-193.33deg, rgba(255, 121, 218, 0.8980392157) -11.44%, rgba(147, 86, 220, 0.8980392157) 123.93%);
+  background: linear-gradient(
+    -193.33deg,
+    rgba(255, 121, 218, 0.8980392157) -11.44%,
+    rgba(147, 86, 220, 0.8980392157) 123.93%
+  );
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   transition: all 450ms;
 }
@@ -489,8 +390,6 @@ footer .footer > a {
   width: 200px;
   text-align: left;
   align-self: flex-start;
-  /* desktop
-  margin: 58px 0 6px -2px;*/
 }
 
 .nav .nav_content:nth-child(1) i {
@@ -569,30 +468,30 @@ footer .footer > a {
 /* SECTION-PRINCIAL*/
 .restaurant {
   width: 100%;
-  /*** a supprimer ***/
-  /* mobile */
 }
 
 /* TITLE*/
-.margin h2.font_h2_restaurants {
+.font_h2_restaurants {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.5px;
   display: block;
-  margin: 54.75px 0 0 0;
+  margin: 55px 0 0 0;
   align-self: start;
 }
-.margin .grid_restaurant {
+
+.grid_restaurant {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin: 23px -3px 67.5px -2px;
+  margin: 23px -3px 67px -2px;
   box-sizing: border-box;
   gap: 19px 20px;
   align-self: center;
 }
-.margin .card_restaurants {
+
+.card_restaurants {
   position: relative;
   max-width: 490px;
   background: #ffffff;
@@ -605,7 +504,7 @@ footer .footer > a {
   opacity: 0.95;
   transition: all 0.3s;
 }
-.margin .card_restaurants::after {
+.card_restaurants::after {
   content: "";
   position: absolute;
   top: 0;
@@ -615,11 +514,11 @@ footer .footer > a {
   z-index: -1;
   transition: all 0.3s;
 }
-.margin .card_restaurants:hover {
+.card_restaurants:hover {
   opacity: 1;
   z-index: 2;
 }
-.margin .card_restaurants:hover::after {
+.card_restaurants:hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -630,11 +529,11 @@ footer .footer > a {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   z-index: -1;
 }
-.margin .card_restaurants:hover .new_card {
+.card_restaurants:hover .new_card {
   -webkit-text-stroke: 0.25px #008766;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.margin .card_restaurants .new_card {
+.card_restaurants .new_card {
   position: absolute;
   top: 11.5px;
   right: 10.5px;
@@ -648,7 +547,7 @@ footer .footer > a {
   z-index: 1;
   cursor: pointer;
 }
-.margin .card_restaurants .new_card::after {
+.card_restaurants .new_card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -660,37 +559,40 @@ footer .footer > a {
   opacity: 1;
   border-radius: 2px;
 }
-.margin .card_restaurants .new_card:hover {
+.card_restaurants .new_card:hover {
   -webkit-text-stroke: 0.25px #008766;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.margin .card_restaurants .new_card:hover::after {
+.card_restaurants .new_card:hover::after {
   opacity: 0.75;
   transition: all 300ms;
 }
-.margin .card_restaurants .grow {
-  width: 100%;
-  height: 200%;
+.card_restaurants .grow {
+  position: relative;
+  top: -161px;
+  box-sizing: border-box;
+  padding: 161px 0 0 0;
+  width: 100;
 }
-.margin .card_restaurants:nth-child(1) {
+.card_restaurants:nth-child(1) {
   background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 102.5% 97.5%;
   background-position: center -65px;
   background-repeat: no-repeat;
 }
-.margin .card_restaurants:nth-child(2) {
+.card_restaurants:nth-child(2) {
   background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-position: center -41vw;
   background-repeat: no-repeat;
 }
-.margin .card_restaurants:nth-child(3) {
+.card_restaurants:nth-child(3) {
   background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: 102% 93.5%;
   background-position: center -60px;
   background-repeat: no-repeat;
 }
-.margin .card_restaurants:nth-child(4) {
+.card_restaurants:nth-child(4) {
   background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: 100% 94.1%;
   background-position: center -60px;
@@ -803,14 +705,15 @@ footer .footer > a {
   display: block;
   position: absolute;
   background-color: transparent;
-  background-image: transparent;
+  background: transparent;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   width: 100%;
   height: 100%;
   max-height: 21.5px;
-  animation: heart 1.5s forwards;
+  -webkit-text-stroke: 1px transparent;
+  animation: heart-stroke 2.05s forwards;
 }
 .luky:hover .unchecked:defined {
   -webkit-text-stroke: 1px transparent;
@@ -818,10 +721,6 @@ footer .footer > a {
   z-index: -1;
 }
 
-.luky:hover .checked {
-  -webkit-text-stroke: 1px transparent;
-  animation: heart-stroke 2.05s forwards;
-}
 .luky:hover .checked .x {
   animation: heart 1.5s forwards;
   height: 21px;
@@ -832,256 +731,93 @@ footer .footer > a {
   width: 100%;
   background-color: #fff;
   margin: auto;
-  /*section-principal-*/
 }
-.main .head_img {
+
+.head_img {
   width: 100%;
   max-width: 1440px;
   height: 70.66vw;
   min-height: 265px;
   max-height: 385px;
 }
-.main .a_la_french {
-  background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) left top no-repeat;
+
+.a_la_french {
+  background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) left
+    top no-repeat;
   background-size: 100%;
 }
-.main .pallette {
-  background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center bottom no-repeat;
+
+.pallette {
+  background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+    center top no-repeat;
   background-size: 110%;
 }
-.main .la_note {
-  background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center no-repeat;
+
+.la_note {
+  background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center
+    no-repeat;
   background-size: 100%;
 }
-.main .le_delice {
-  background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center top no-repeat;
+
+.le_delice {
+  background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+    center top no-repeat;
   background-size: 100%;
 }
-.main .gourmet_menu {
+
+.gourmet_menu {
   position: relative;
   top: 0px;
   width: 100%;
   max-width: 1055px;
   background-color: #f7f7f7;
   border-radius: 40px 40px 0px 0px;
-  margin: -45px auto 55px;
+  margin: -45px auto 22px;
   z-index: 0;
-  /*titre-h1*/
-  /*sous-section-*/
 }
-.main .gourmet_menu--title {
+.gourmet_menu--title {
   position: relative;
   top: 32px;
   display: grid;
-  grid-template-columns: 261px 30px;
+  grid-template-columns: 269px 30px;
   grid-template-rows: 10px;
   width: calc(100% - 7px);
   max-width: 340px;
   margin: auto;
   padding-bottom: 90px;
 }
-.main .gourmet_menu--title_h1 {
+.gourmet_menu--title_h1 {
   font-family: "Shrikhand", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 41px;
   color: #101010;
-  width: 261px;
+  width: 269px;
   height: 40px;
   margin: auto;
 }
-.main .gourmet_menu--title .like {
+.gourmet_menu--title .like {
   top: -14px;
-  margin-left: 29px;
+  margin-left: 21px;
   max-height: 21.5px;
   border: 1px solid #f7f7f7;
 }
-.main .gourmet_menu .starter {
+.gourmet_menu .starter {
   padding: 0px 0 40px 0;
 }
-.main .gourmet_menu .dessert {
-  padding: 38px 0 22px 0;
+.gourmet_menu .dessert {
+  padding: 38px 0 0px 0;
 }
-.main .starter,
-.main .main-course,
-.main .dessert {
-  max-width: 634px;
-  margin: auto;
-}
-.main .starter_h2,
-.main .main-course_h2,
-.main .dessert_h2 {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #000;
-  border-bottom: 3.5px solid #99e2d0;
-  margin: 0px 0 0 13px;
-  padding: 0 0 5px;
-  max-width: 40px;
-}
-.main .starter_contener,
-.main .main-course_contener,
-.main .dessert_contener {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-height: 69px;
-  z-index: 3;
-  box-sizing: border-box;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  margin-top: 12px;
-}
-.main .starter_contener--icone,
-.main .main-course_contener--icone,
-.main .dessert_contener--icone {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 25.5px 20px 20px 23.5px;
-  z-index: 1000;
-  border-radius: 50%;
-  background-color: white;
-  transition: all 0.05s ease-in;
-  opacity: 0;
-  transform: scale(0.77);
-}
-.main .starter_contener--icone i,
-.main .main-course_contener--icone i,
-.main .dessert_contener--icone i {
-  display: block;
-  color: transparent;
-  background-color: #99e2d0;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 22px;
-  border-radius: 50%;
-}
-.main .starter_contener_card,
-.main .main-course_contener_card,
-.main .dessert_contener_card {
-  position: relative;
-  z-index: 99;
-  top: 0px;
-  right: 0px;
-  left: 0;
-  display: grid;
-  grid-template-columns: calc(100% - 64px) 64px;
-  grid-template-rows: 34px 34px;
-  width: 100%;
-  height: 69px;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.44s;
-  cursor: pointer;
-}
-.main .starter_contener_card--title,
-.main .main-course_contener_card--title,
-.main .dessert_contener_card--title {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 13px 48px 0 11px;
-  margin: 0;
-}
-.main .starter_contener_card--description,
-.main .main-course_contener_card--description,
-.main .dessert_contener_card--description {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding: 4px 0 0 11px;
-  margin: 0;
-}
-.main .starter_contener_card--price,
-.main .main-course_contener_card--price,
-.main .dessert_contener_card--price {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  padding: 5px 0 0 16px;
-  margin: 0;
-  letter-spacing: -1px;
-}
-.main .starter_contener_card::after,
-.main .main-course_contener_card::after,
-.main .dessert_contener_card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 0px;
-  height: 69px;
-  left: calc(100% - 0px);
-  top: 0px;
-  right: 59px;
-  background: #99e2d0;
-  border-radius: 0px;
-  z-index: -1;
-  transition: all 0.25s;
-}
-.main .starter_contener:hover .starter_contener_card,
-.main .starter_contener:hover .main-course_contener_card,
-.main .starter_contener:hover .dessert_contener_card,
-.main .main-course_contener:hover .starter_contener_card,
-.main .main-course_contener:hover .main-course_contener_card,
-.main .main-course_contener:hover .dessert_contener_card,
-.main .dessert_contener:hover .starter_contener_card,
-.main .dessert_contener:hover .main-course_contener_card,
-.main .dessert_contener:hover .dessert_contener_card {
-  width: calc(100% - 59px);
-  border-radius: 15px 0 0 15px;
-  transition: border-radius 100ms, width 0.44s;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-.main .starter_contener:hover .starter_contener_card::after,
-.main .starter_contener:hover .main-course_contener_card::after,
-.main .starter_contener:hover .dessert_contener_card::after,
-.main .main-course_contener:hover .starter_contener_card::after,
-.main .main-course_contener:hover .main-course_contener_card::after,
-.main .main-course_contener:hover .dessert_contener_card::after,
-.main .dessert_contener:hover .starter_contener_card::after,
-.main .dessert_contener:hover .main-course_contener_card::after,
-.main .dessert_contener:hover .dessert_contener_card::after {
-  z-index: 100;
-  width: 59px;
-  border-radius: 0 15px 15px 0;
-  transition: all 0.44s;
-}
-.main .starter_contener:hover .starter_contener--icone,
-.main .main-course_contener:hover .starter_contener--icone,
-.main .dessert_contener:hover .starter_contener--icone {
-  opacity: 1;
-  transform: scale(1);
-  transition: transform 0.34s 0.11s, opacity 0.64s 0.11s ease-out;
-}
-.main .footer--corection {
+
+.footer--corection {
   max-width: 146px;
-  margin: 20px auto 38px;
+  margin: 35px auto 20px;
+  opacity: 0;
+  animation: intro 1s 6.5s forwards ease-in-out;
 }
-.main .local_style_gradient {
+
+.local_style_gradient2 {
   flex-flow: column;
   justify-content: center;
   min-width: 146px;
@@ -1094,7 +830,6 @@ footer .footer > a {
   position: relative;
   max-width: 634px;
   margin: auto;
-  /*** anime ***/
 }
 .starter_h2,
 .main-course_h2,
@@ -1121,6 +856,8 @@ footer .footer > a {
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
   margin-top: 12px;
+  opacity: 0;
+  left: -100vw;
 }
 .starter_contener--icone,
 .main-course_contener--icone,
@@ -1157,10 +894,6 @@ footer .footer > a {
 .main-course_contener_card,
 .dessert_contener_card {
   position: relative;
-  z-index: 99;
-  top: 0px;
-  right: 0px;
-  left: 0;
   display: grid;
   grid-template-columns: calc(100% - 64px) 64px;
   grid-template-rows: 34px 34px;
@@ -1216,13 +949,10 @@ footer .footer > a {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
   width: 0px;
   height: 69px;
   left: calc(100% - 0px);
-  top: 0px;
   right: 59px;
   background: #99e2d0;
   border-radius: 0px;
@@ -1286,91 +1016,177 @@ footer .footer > a {
     display: block;
   }
 }
-.main .gourmet_menu .footer--corection {
-  opacity: 0;
-  animation: intro 1s 6.5s forwards ease-in-out;
-}
-.main .gourmet_menu .main-course {
+
+.main-course {
   top: 80px;
   opacity: 0;
   animation: intro 1s 3s forwards;
 }
-.main .gourmet_menu .starter {
+
+.starter {
   position: relative;
   top: -80px;
   opacity: 0;
   animation: intro 1s 0.5s forwards;
 }
-.main .gourmet_menu .starter_contener:nth-child(1) {
-  opacity: 0;
-  left: -100vw;
+
+.starter_contener:nth-child(1) {
   animation: intro 1.6s 0.5s forwards ease-in;
 }
-.main .gourmet_menu .starter_contener:nth-child(2) {
-  opacity: 0;
-  left: -100vw;
+.starter_contener:nth-child(2) {
   animation: intro 1.4s 1s forwards;
 }
-.main .gourmet_menu .starter_contener:nth-child(3) {
-  opacity: 0;
-  left: -100vw;
+.starter_contener:nth-child(3) {
   animation: intro 1.2s 1.5s forwards;
 }
-.main .gourmet_menu .starter_contener:nth-child(4) {
-  opacity: 0;
-  left: -100vw;
+.starter_contener:nth-child(4) {
   animation: intro 1s 2s forwards;
 }
-.main .gourmet_menu .starter_contener:nth-child(5) {
-  opacity: 0;
+.starter_contener:nth-child(5) {
   z-index: 0;
   top: -80px;
   animation: intro 0.5s 2.5s forwards;
 }
-.main .gourmet_menu .main-course_contener:nth-child(1) {
-  opacity: 0;
-  left: -100vw;
+
+.main-course_contener:nth-child(1) {
   animation: intro 1.6s 3.2s forwards;
 }
-.main .gourmet_menu .main-course_contener:nth-child(2) {
-  opacity: 0;
+.main-course_contener:nth-child(2) {
   top: 80px;
-  left: -100vw;
   animation: intro 1.3s 3s forwards;
 }
-.main .gourmet_menu .main-course_contener:nth-child(3) {
-  opacity: 0;
-  left: -100vw;
+.main-course_contener:nth-child(3) {
   animation: intro 1.2s 3.5s forwards;
 }
-.main .gourmet_menu .main-course_contener:nth-child(4) {
-  opacity: 0;
-  left: -100vw;
+.main-course_contener:nth-child(4) {
   animation: intro 1s 4s forwards;
 }
-.main .gourmet_menu .dessert {
+
+.dessert {
   opacity: 0;
   animation: intro 1.2s 4.3s forwards;
 }
-.main .gourmet_menu .dessert_contener:nth-child(1) {
-  opacity: 0;
-  left: -100vw;
+
+.dessert_contener:nth-child(1) {
   animation: intro 1s 0s forwards;
 }
-.main .gourmet_menu .dessert_contener:nth-child(2) {
-  opacity: 0;
-  left: -100vw;
+.dessert_contener:nth-child(2) {
   animation: intro 1.3s 4.7s forwards ease-out;
 }
-.main .gourmet_menu .dessert_contener:nth-child(3) {
-  opacity: 0;
-  left: -100vw;
+.dessert_contener:nth-child(3) {
   animation: intro 1s 5.5s forwards ease-out;
 }
-.main .gourmet_menu .dessert_contener:nth-child(4) {
-  opacity: 0;
-  left: -100vw;
+.dessert_contener:nth-child(4) {
   animation: intro 1s 6s forwards;
+}
+
+/************--Loader--************/
+.loader {
+  position: absolute;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  height: 0vh;
+  width: 0vw;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: -o-linear-gradient(left, #ff79da, #9356dc);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background: linear-gradient(to right, #ff79da, #9356dc);
+  z-index: 6;
+  animation: rotate 5s ease-in-out 1 alternate forwards;
+}
+
+.loader--shift {
+  background: #ff79da;
+  opacity: 1;
+  animation: color_shift 1.666s 1ms ease-in-out 4 alternate-reverse forwards;
+  height: 0vh;
+  width: 0%;
+  left: 0;
+  top: 0;
+}
+
+.loader--logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 96vw;
+  max-width: 100%;
+  height: 80vh;
+  max-height: 100vh;
+  box-sizing: content-box;
+  margin: 0 auto;
+  border-right: 2vw solid transparent;
+  border-left: 2vw solid transparent;
+  border-top: 2vh solid transparent;
+  border-bottom: 2vh solid transparent;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  animation: omyfood 5s ease-in-out 1 alternate forwards;
+  text-align: center;
+  z-index: 9;
+}
+.loader--logo .omyfood {
+  top: 15vh;
+  left: 15vw;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1440px;
+  height: auto;
+  font-family: "Shrikhand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14vw;
+  border: 1px solid transparent;
+  background: radial-gradient(
+      circle farthest-corner at center center,
+      white,
+      #111
+    )
+    no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 150%;
+  background-position: center;
+  animation: omyfood 5s ease-in-out 1 alternate forwards;
+}
+.loader--logo .omyfood > span {
+  display: block;
+  text-align: center;
+  font-size: 75%;
+}
+.loader--logo .omyfood > i {
+  position: relative;
+}
+.loader--logo .omyfood i:nth-child(1) {
+  font-size: 0%;
+  animation: i_fonts 0.75s ease-in-out 0s 1 alternate forwards;
+}
+.loader--logo .omyfood i:nth-child(2) {
+  font-size: 0%;
+  animation: i_fonts 0.5s ease-in-out 0.8s 1 alternate forwards;
+}
+.loader--logo .omyfood i:nth-child(3) {
+  font-size: 0%;
+  animation: i_fonts 0.65s ease-in-out 1.25s 1 alternate forwards;
+}
+.loader--logo .omyfood i:nth-child(4) {
+  font-size: 0%;
+  animation: i_fonts 0.75s ease-in-out 2s 1 alternate forwards;
 }
 
 /****** --Media queries-- ******/
@@ -1416,15 +1232,19 @@ footer .footer > a {
     background-position: -80px -13.78vw;
   }
   .main .le_delice {
-    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center top no-repeat;
+    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+      center top no-repeat;
     background-size: 110%;
   }
-  /*** ----Restarants--- ***/
-  .main .gourmet_menu {
-    /*titre-h1*/
+  /*** ----Restaurants--- ***/
+  .main .gourmet_menu--title {
+    max-width: 300px;
+  }
+  .main .gourmet_menu--title_h1 {
+    letter-spacing: -1px;
   }
   .main .gourmet_menu--title .like {
-    margin-left: 4.8vw;
+    margin-left: 0vw;
   }
 }
 /***!! [ +--375px--] ****/
@@ -1441,6 +1261,11 @@ footer .footer > a {
   }
   .grid_restaurant {
     padding: 23px 5.128vw 67.5px 5.128vw;
+  }
+  .main .pallette {
+    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+      center bottom no-repeat;
+    background-size: 110%;
   }
 }
 @media screen and (min-width: 390px) {
@@ -1502,19 +1327,23 @@ footer .footer > a {
 /***!! [--1024px--] ****/
 @media screen and (min-width: 768px) {
   .main .a_la_french {
-    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center -23vw no-repeat;
+    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
+      center -23vw no-repeat;
     background-size: cover;
   }
   .main .la_note {
-    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center top no-repeat;
+    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center top
+      no-repeat;
     background-size: 100%;
   }
   .main .le_delice {
-    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center bottom no-repeat;
+    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+      center bottom no-repeat;
     background-size: 100%;
   }
   .main .pallette {
-    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center no-repeat;
+    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+      center no-repeat;
     background-size: 110%;
   }
   .nav_content {
@@ -1554,10 +1383,6 @@ footer .footer > a {
   .font_h1 {
     font-weight: 700;
     text-align: center;
-    /* Mobile-mod*/
-    font-size: 24px;
-    line-height: 28px;
-    /* Desktop-mod*/
     margin: 30px 0px 1px 0px;
     letter-spacing: -0.7px;
     font-size: 40px;
@@ -1692,7 +1517,8 @@ footer .footer > a {
 }
 @media screen and (min-width: 820px) {
   .main .la_note {
-    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center no-repeat;
+    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center
+      no-repeat;
     background-size: 100%;
   }
   footer .footer {
@@ -1794,8 +1620,11 @@ footer .footer > a {
     background-size: cover;
     background-position: center -115px;
   }
+  .loader--logo .omyfood {
+    font-size: 160px;
+  }
 }
-@media screen and (min-width: 1150px) and (min-width: 1250px) {
+@media screen and (min-width: 1250px) {
   .nav_content {
     max-width: 310.5px;
   }
@@ -1861,20 +1690,24 @@ footer .footer > a {
 /***!! Clearing-inf:1440px ****/
 @media screen and (min-width: 1440px) {
   .main .a_la_french {
-    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) -40px -469px no-repeat;
+    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) -40px -469px
+      no-repeat;
     background-size: 120%;
   }
   .main .la_note {
-    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center no-repeat;
+    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center
+      no-repeat;
     background-size: 100%;
   }
   .main .le_delice {
-    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center -356px no-repeat;
+    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+      center -356px no-repeat;
     background-size: 100%;
   }
   .main .pallette {
-    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center top no-repeat;
-    background-size: 110%;
+    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+    left -334px no-repeat;
+  background-size: 100%;
   }
   /****** --Media queries-- ******/
   .margin {
@@ -1911,10 +1744,6 @@ footer .footer > a {
   .font_h1 {
     font-weight: 700;
     text-align: center;
-    /* Mobile-mod*/
-    font-size: 24px;
-    line-height: 28px;
-    /* Desktop-mod*/
     margin: 30px 0px 1px 0px;
     letter-spacing: -0.7px;
     font-size: 40px;
@@ -2043,13 +1872,9 @@ footer .footer > a {
     margin-left: -23px;
   }
   /*** ----Restarants--- ***/
-  .main .pallette {
-    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) left -334px no-repeat;
-    background-size: 100%;
-  }
   .main .gourmet_menu {
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 112px;
     /*titre-h1*/
   }
   .main .gourmet_menu--title {
@@ -2058,10 +1883,13 @@ footer .footer > a {
   }
   .main .gourmet_menu--title .like {
     top: -12px;
-    margin-left: 20px;
+    margin-left: 12px;
   }
   .main .gourmet_menu .starter {
     padding: 35px 0 40px 0;
+  }
+  .main .gourmet_menu .dessert {
+    margin-bottom: 41px;
   }
   .main .starter_h2,
   .main .main-course_h2,
@@ -2093,7 +1921,7 @@ footer .footer > a {
     padding: 3.5px 0 0 22px;
     letter-spacing: -0.5px;
   }
-  .local_style_gradient {
+  .local_style_gradient2 {
     flex-flow: column;
     justify-content: center;
     min-width: 146px;
@@ -2251,6 +2079,139 @@ footer .footer > a {
     right: 59px;
     background: #99e2d0;
     border-radius: 0px 15px 15px 0px;
+  }
+}
+/********************loader**************************/
+@keyframes rotate {
+  0% {
+    height: 100vh;
+    width: 100%;
+    background-size: 500%;
+    background-position: left 0% top 100%;
+  }
+  25% {
+    background-position: left 100% top 100%;
+  }
+  50% {
+    background-position: left 50% top 50%;
+  }
+  75% {
+    background-position: left 0% top 0%;
+    opacity: 1;
+  }
+  99% {
+    z-index: 6;
+    height: 100vh;
+    width: 100%;
+  }
+  100% {
+    z-index: -999;
+    background-position: left 0% top 100%;
+    height: 0%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes color_shift {
+  0% {
+    height: 100vh;
+    width: 100%;
+    background-size: 500%;
+    background-position: left 0% top 100%;
+  }
+  1% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  25% {
+    background-position: left 100% top 100%;
+  }
+  50% {
+    -webkit-filter: hue-rotate(-50deg);
+    background-position: left 50% top 50%;
+  }
+  75% {
+    background-position: left 0% top 0%;
+    opacity: 1;
+  }
+  99% {
+    z-index: 6;
+    height: 100vh;
+    width: 100%;
+    left: 0vw;
+    top: 0vh;
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+    z-index: -999;
+    background-position: left 0% top 100%;
+    height: 0vh;
+    width: 0vw;
+    left: 0vw;
+    top: 0vh;
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes i_fonts {
+  100% {
+    font-size: 0%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+@keyframes span_fonts {
+  0% {
+    font-size: 73.333%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+@keyframes omyfood {
+  0% {
+    background-size: 0%;
+    background-position: right;
+    opacity: 0.1;
+  }
+  7% {
+    background-size: 90%;
+    background-position: center;
+  }
+  14% {
+    opacity: 1;
+  }
+  21% {
+    background-size: 150%;
+    background-position: right;
+  }
+  45% {
+    background-size: 300%;
+    background-position: right;
+  }
+  75% {
+    background-size: 150%;
+    background-position: center;
+  }
+  80% {
+    background-size: 450%;
+    background-position: center;
+    opacity: 1;
+  }
+  97% {
+    background-size: 700%;
+    background-position: center;
+    z-index: 9;
+  }
+  100% {
+    background-size: 700%;
+    background-position: center;
+    opacity: 0;
+    display: none;
+    z-index: -111;
   }
 }
 /****** [ Slider ] ******/

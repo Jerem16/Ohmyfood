@@ -219,18 +219,21 @@
     }
     .gourmet_menu {
       position: relative;
-      padding-bottom: 60px;
+      padding-bottom: 112px;
       /*titre-h1*/
       &--title {
         top: 54px;
         width: 309px;
         .like {
           top: -12px;
-          margin-left: 20px;
+          margin-left: 12px;
         }
       }
       .starter {
         padding: 35px 0 40px 0;
+      }
+      .dessert {
+        margin-bottom: 41px;
       }
     }
     .starter,
@@ -259,7 +262,7 @@
       }
     }
   }
-  .local_style_gradient {
+  .local_style_gradient2 {
     flex-flow: column;
     justify-content: center;
     min-width: 146px;

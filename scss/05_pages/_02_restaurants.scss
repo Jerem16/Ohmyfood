@@ -1,237 +1,80 @@
 /****** [ Pages N° ] ******/
 .main {
   width: 100%;
-
   background-color: $color-white;
   margin: auto;
-
-  .head_img {
-    width: 100%;
-    max-width: 1440px;
-
-    height: 70.66vw;
-    min-height: 265px;
-    max-height: 385px;
-  }
-  .a_la_french {
-    background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
-      left top no-repeat;
-    background-size: 100%;
-  }
-  .pallette {
-    background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
-      center bottom no-repeat;
-    background-size: 110%;
-  }
-  .la_note {
-    background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center
-      no-repeat;
-    background-size: 100%;
-  }
-  .le_delice {
-    background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
-      center top no-repeat;
-    background-size: 100%;
-  }
-  /*section-principal-*/
-  .gourmet_menu {
+}
+.head_img {
+  width: 100%;
+  max-width: 1440px;
+  height: 70.66vw;
+  min-height: 265px;
+  max-height: 385px;
+}
+.a_la_french {
+  background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) left
+    top no-repeat;
+  background-size: 100%;
+}
+.pallette {
+  background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+    center top no-repeat;
+  background-size: 110%;
+}
+.la_note {
+  background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center
+    no-repeat;
+  background-size: 100%;
+}
+.le_delice {
+  background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+    center top no-repeat;
+  background-size: 100%;
+}
+.gourmet_menu {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  max-width: 1055px;
+  background-color: #f7f7f7;
+  border-radius: 40px 40px 0px 0px;
+  margin: -45px auto 22px;
+  z-index: 0;
+  /*titre-h1*/
+  &--title {
     position: relative;
-    top: 0px;
-    width: 100%;
-    max-width: 1055px;
-    background-color: #f7f7f7;
-    border-radius: 40px 40px 0px 0px;
-    margin: -45px auto 55px;
-    z-index: 0;
-    /*titre-h1*/
-    &--title {
-      position: relative;
-      top: 32px;
-      display: grid;
-      grid-template-columns: 261px 30px;
-      grid-template-rows: 10px;
-      width: calc(100% - 7px);
-      max-width: 340px;
-      margin: auto;
-      padding-bottom: 90px;
-      &_h1 {
-        @include h1_logo_menu;
-        width: 261px;
-        height: 40px;
-        margin: auto;
-      }
-      .like {
-        top: -14px;
-        margin-left: 29px;
-        max-height: 21.5px;
-        border: 1px solid #f7f7f7;
-      }
-    } /*sous-section-*/
-    .starter {
-      padding: 0px 0 40px 0;
-    }
-
-    .dessert {
-      padding: 38px 0 22px 0;
-    }
-  }
-  .starter,
-  .main-course,
-  .dessert {
-    max-width: 634px;
+    top: 32px;
+    display: grid;
+    grid-template-columns: 269px 30px;
+    grid-template-rows: 10px;
+    width: calc(100% - 7px);
+    max-width: 340px;
     margin: auto;
-    &_h2 {
-      @include h2_menu;
-      color: #000;
-      border-bottom: 3.5px solid $color-tertiary;
-      margin: 0px 0 0 13px;
-      padding: 0 0 5px;
-      max-width: 40px;
+    padding-bottom: 90px;
+    &_h1 {
+      @include h1_logo_menu;
+      width: 269px;
+      height: 40px;
+      margin: auto;
     }
-    &_contener {
-      $border: 13px;
-      position: relative;
-      display: block;
-      width: 100%;
-      max-height: 69px;
-      z-index: 3;
-      box-sizing: border-box;
-      border-left: $border solid transparent;
-      border-right: $border solid transparent;
-
-      margin-top: 12px;
-
-      &--icone {
-        position: absolute;
-        right: 0;
-        top: 0;
-
-        width: 20px;
-        height: 20px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-        margin: 25.5px 20px 20px 23.5px;
-        z-index: 1000;
-
-        border-radius: 50%;
-
-        background-color: white;
-
-        transition: all 0.05s ease-in;
-
-        opacity: 0;
-        transform: scale(0.77);
-
-        i {
-          display: block;
-          color: transparent;
-          background-color: #99e2d0;
-          -webkit-background-clip: text;
-          background-clip: text;
-          font-size: 22px;
-          border-radius: 50%;
-        }
-      }
-      &_card {
-        position: relative;
-        z-index: 99;
-        top: 0px;
-        right: 0px;
-        left: 0;
-        display: grid;
-        grid-template-columns: calc(100% - 64px) 64px;
-        grid-template-rows: 34px 34px;
-
-        width: 100%; //ici 500px + 59px
-        height: 69px;
-        //max-width: 634px;
-        border-radius: 15px;
-        background: white;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.44s;
-        cursor: pointer;
-        &--title {
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          grid-column-start: 1; // grid-column: 1/7;
-          grid-column-end: 3;
-          @include card_menu-title;
-          padding: 13px 48px 0 11px;
-          margin: 0;
-        }
-        &--description {
-          @include card_menu-description;
-          display: block;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          padding: 4px 0 0 11px;
-          margin: 0;
-        }
-        &--price {
-          @include card_menu-price;
-          padding: 5px 0 0 16px;
-          margin: 0;
-          letter-spacing: -1px;
-        }
-
-        &::after {
-          @include pseudo-pos;
-          width: 0px;
-          height: 69px;
-          left: calc(100% - 0px); //ici 500px
-          top: 0px;
-          right: 59px;
-          background: #99e2d0;
-          border-radius: 0px;
-          z-index: -1;
-          transition: all 0.25s;
-        }
-      }
-      &:hover {
-        .starter_contener_card,
-        .main-course_contener_card,
-        .dessert_contener_card {
-          width: calc(100% - 59px); //ici
-          border-radius: 15px 0 0 15px;
-          transition: border-radius 100ms, width 0.44s;
-          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-          &::after {
-            z-index: 100;
-            width: 59px;
-            border-radius: 0 15px 15px 0;
-            transition: all 0.44s;
-          }
-        }
-        .starter_contener--icone {
-          opacity: 1;
-          transform: scale(1);
-          transition: transform 0.34s 0.11s, opacity 0.64s 0.11s ease-out;
-        }
-      }
+    .like {
+      top: -14px;
+      margin-left: 21px;
+      max-height: 21.5px;
+      border: 1px solid #f7f7f7;
     }
+  } /*sous-section-*/
+  .starter {
+    padding: 0px 0 40px 0;
   }
-  .footer--corection {
-    max-width: 146px;
-    margin: 20px auto 38px;
-  }
-  .local_style_gradient {
-    flex-flow: column;
-    justify-content: center;
-    min-width: 146px;
-    padding: 15px 21.5px 16px 21.5px;
+
+  .dessert {
+    padding: 38px 0 0px 0;
   }
 }
 .starter,
 .main-course,
 .dessert {
-  position: relative;
   max-width: 634px;
   margin: auto;
   &_h2 {
@@ -370,8 +213,153 @@
       }
     }
   }
+}
+.footer--corection {
+  max-width: 146px;
+  margin: 35px auto 20px;
+}
+.local_style_gradient2 {
+  flex-flow: column;
+  justify-content: center;
+  min-width: 146px;
+  padding: 15px 21.5px 16px 21.5px;
+}
+.starter,
+.main-course,
+.dessert {
+  position: relative;
+  max-width: 634px;
+  margin: auto;
+  &_h2 {
+    @include h2_menu;
+    color: #000;
+    border-bottom: 3.5px solid $color-tertiary;
+    margin: 0px 0 0 13px;
+    padding: 0 0 5px;
+    max-width: 40px;
+  }
+  &_contener {
+    $border: 13px;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-height: 69px;
+    z-index: 3;
+    box-sizing: border-box;
+    border-left: $border solid transparent;
+    border-right: $border solid transparent;
+    margin-top: 12px;
 
-  /*** anime ***/
+    &--icone {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      width: 20px;
+      height: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0;
+      margin: 25.5px 20px 20px 23.5px;
+      z-index: 1000;
+
+      border-radius: 50%;
+
+      background-color: white;
+
+      transition: all 0.05s ease-in;
+
+      opacity: 0;
+      transform: scale(0.77);
+
+      i {
+        display: block;
+        color: transparent;
+        background-color: #99e2d0;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 22px;
+        border-radius: 50%;
+      }
+    }
+    &_card {
+      position: relative;
+      display: grid;
+      grid-template-columns: calc(100% - 64px) 64px;
+      grid-template-rows: 34px 34px;
+
+      width: 100%; //ici 500px + 59px
+      height: 69px;
+      //max-width: 634px;
+      border-radius: 15px;
+      background: white;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.44s;
+      cursor: pointer;
+      &--title {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        grid-column-start: 1; // grid-column: 1/7;
+        grid-column-end: 3;
+        @include card_menu-title;
+        padding: 13px 48px 0 11px;
+        margin: 0;
+      }
+      &--description {
+        @include card_menu-description;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 4px 0 0 11px;
+        margin: 0;
+      }
+      &--price {
+        @include card_menu-price;
+        padding: 5px 0 0 16px;
+        margin: 0;
+        letter-spacing: -1px;
+      }
+
+      &::after {
+        @include pseudo-pos;
+        width: 0px;
+        height: 69px;
+        left: calc(100% - 0px); //ici 500px
+        right: 59px;
+        background: #99e2d0;
+        border-radius: 0px;
+        z-index: -1;
+        transition: all 0.25s;
+      }
+    }
+    &:hover {
+      .starter_contener_card,
+      .main-course_contener_card,
+      .dessert_contener_card {
+        width: calc(100% - 59px); //ici
+        border-radius: 15px 0 0 15px;
+        transition: border-radius 100ms, width 0.44s;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        &::after {
+          z-index: 100;
+          width: 59px;
+          border-radius: 0 15px 15px 0;
+          transition: all 0.44s;
+        }
+      }
+      .starter_contener--icone {
+        opacity: 1;
+        transform: scale(1);
+        transition: transform 0.34s 0.11s, opacity 0.64s 0.11s ease-out;
+      }
+    }
+  }
 }
 
 @keyframes intro {
@@ -399,109 +387,87 @@
   }
 }
 
-.main {
-  .gourmet_menu {
-    .footer--corection {
-      opacity: 0;
-      animation: intro 1s 6.5s forwards ease-in-out;
-    }
+.footer--corection {
+  opacity: 0;
+  animation: intro 1s 6.5s forwards ease-in-out;
+}
 
-    .main-course {
-      top: 80px;
-      opacity: 0;
-      animation: intro 1s 3s forwards;
-    }
+.main-course {
+  top: 80px;
+  opacity: 0;
+  animation: intro 1s 3s forwards;
+}
 
-    .starter {
-      position: relative;
+.starter {
+  position: relative;
+  top: -80px;
+  opacity: 0;
+  animation: intro 1s 0.5s forwards;
+}
+.starter,
+.main-course,
+.dessert {
+  &_contener {
+    opacity: 0;
+    left: -100vw;
+  }
+}
+.starter {
+  &_contener {
+    &:nth-child(1) {
+      animation: intro 1.6s 0.5s forwards ease-in;
+    }
+    &:nth-child(2) {
+      animation: intro 1.4s 1s forwards;
+    }
+    &:nth-child(3) {
+      animation: intro 1.2s 1.5s forwards;
+    }
+    &:nth-child(4) {
+      animation: intro 1s 2s forwards;
+    }
+    &:nth-child(5) {
+      z-index: 0;
       top: -80px;
-      opacity: 0;
-      animation: intro 1s 0.5s forwards;
+      animation: intro 0.5s 2.5s forwards;
     }
-    .starter {
-      &_contener {
-        &:nth-child(1) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1.6s 0.5s forwards ease-in;
-        }
-        &:nth-child(2) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1.4s 1s forwards;
-        }
-        &:nth-child(3) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1.2s 1.5s forwards;
-        }
-        &:nth-child(4) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1s 2s forwards;
-        }
-        &:nth-child(5) {
-          opacity: 0;
-          z-index: 0;
-          top: -80px;
-          //   left: -100vw;
-          animation: intro 0.5s 2.5s forwards;
-        }
-      }
-    }
+  }
+}
 
-    .main-course {
-      &_contener {
-        &:nth-child(1) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1.6s 3.2s forwards;
-        }
-        &:nth-child(2) {
-          opacity: 0;
-          top: 80px;
-          left: -100vw;
-          animation: intro 1.3s 3s forwards;
-        }
-        &:nth-child(3) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1.2s 3.5s forwards;
-        }
-        &:nth-child(4) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1s 4s forwards;
-        }
-      }
+.main-course {
+  &_contener {
+    &:nth-child(1) {
+      animation: intro 1.6s 3.2s forwards;
     }
-    .dessert {
-      opacity: 0;
-      animation: intro 1.2s 4.3s forwards;
+    &:nth-child(2) {
+      top: 80px;
+      animation: intro 1.3s 3s forwards;
     }
-    .dessert {
-      &_contener {
-        &:nth-child(1) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1s 0s forwards;
-        }
-        &:nth-child(2) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1.3s 4.7s forwards ease-out;
-        }
-        &:nth-child(3) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1s 5.5s forwards ease-out;
-        }
-        &:nth-child(4) {
-          opacity: 0;
-          left: -100vw;
-          animation: intro 1s 6s forwards;
-        }
-      }
+    &:nth-child(3) {
+      animation: intro 1.2s 3.5s forwards;
+    }
+    &:nth-child(4) {
+      animation: intro 1s 4s forwards;
+    }
+  }
+}
+.dessert {
+  opacity: 0;
+  animation: intro 1.2s 4.3s forwards;
+}
+.dessert {
+  &_contener {
+    &:nth-child(1) {
+      animation: intro 1s 0s forwards;
+    }
+    &:nth-child(2) {
+      animation: intro 1.3s 4.7s forwards ease-out;
+    }
+    &:nth-child(3) {
+      animation: intro 1s 5.5s forwards ease-out;
+    }
+    &:nth-child(4) {
+      animation: intro 1s 6s forwards;
     }
   }
 }

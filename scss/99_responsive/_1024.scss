@@ -18,10 +18,10 @@
       background-size: 100%;
     }
     .pallette {
-        background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
-          center no-repeat;
-        background-size: 110%;
-      }
+      background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+        center no-repeat;
+      background-size: 110%;
+    }
   }
   .nav_content {
     max-width: calc(322.5px - 52px);
@@ -346,26 +346,32 @@
       }
     }
   }
-  @media screen and (min-width: 1250px) {
-    .nav_content {
-      max-width: calc(322.5px - 12px);
+  .loader--logo {
+    .omyfood {
+      font-size: 160px;
     }
-    .margin {
-      margin: 0 100px;
-      max-width: calc(1440px - 200px);
-      .grid_restaurant {
-        padding: 0px 2.5775vw 144px 2.5775vw;
-        margin: -0px 0 0 0;
-        gap: 50px 75px;
-      }
-      .card_restaurants {
-        &:nth-child(2) {
-          background-position: center -18.5vw;
-        }
+  }
+}
+@media screen and (min-width: 1250px) {
+  .nav_content {
+    max-width: calc(322.5px - 12px);
+  }
+  .margin {
+    margin: 0 100px;
+    max-width: calc(1440px - 200px);
+    .grid_restaurant {
+      padding: 0px 2.5775vw 144px 2.5775vw;
+      margin: -0px 0 0 0;
+      gap: 50px 75px;
+    }
+    .card_restaurants {
+      &:nth-child(2) {
+        background-position: center -18.5vw;
       }
     }
   }
 }
+
 @media screen and (min-width: 1300px) {
   .nav_content {
     max-width: calc(322.5px - 2px);

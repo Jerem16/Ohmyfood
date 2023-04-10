@@ -59,8 +59,12 @@
     .gourmet_menu {
       /*titre-h1*/
       &--title {
+        max-width: 300px;
+        &_h1 {
+letter-spacing: -1px;
+        }
         .like {
-          margin-left: 4.8vw;
+          margin-left: 0vw;
         }
       }
     }
@@ -83,6 +87,13 @@
   }
   .grid_restaurant {
     padding: 23px 5.128vw 67.5px 5.128vw;
+  }
+  .main {
+    .pallette {
+      background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+        center bottom no-repeat;
+      background-size: 110%;
+    }
   }
 }
 @media screen and (min-width: 390px) {
