@@ -1,0 +1,37 @@
+@import "./00_utils/1_variables";
+@import "./00_utils/2_functions";
+@import "./00_utils/3_mixins";
+@import "./00_utils/4_extensions";
+
+@import "./01_base/01_base";
+@import "./01_base/02_fonts";
+@import "./01_base/03_style_container";
+
+@import "./02_components/01_buttons";
+@import "./02_components/02_form";
+
+@import "./03_styles/style_container";
+
+@import "./04_layout/00_header";
+@import "./04_layout/01_nav";
+@import "./04_layout/99_footer";
+
+@import "./05_pages/01_Accueil_1-search-location";
+@import "./05_pages/01_Accueil_2-presentation";
+@import "./05_pages/01_Accueil_3-nav";
+@import "./05_pages/01_Accueil_4-restaurants";
+@import "./05_pages/02_restaurants";
+@import "./05_pages/03_loader";
+@import "./05_pages/07_page";
+@import "./05_pages/08_page";
+@import "./05_pages/09_page";
+
+@import "./99_responsive/375";
+@import "./99_responsive/1024";
+@import "./99_responsive/1440";
+
+@import "./100_animation/01_animation";
+
+@import "./101_slider/01_slider";
+// npm run sass
+
