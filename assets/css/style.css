@@ -117,18 +117,19 @@ a:visited {
 /****** [Footer] ******/
 footer {
   background-color: #353535;
-  height: 142.25px;
+  height: 186px;
   width: 100vw;
   margin: auto;
-  padding: 21.75px 25px 22px 25px;
   box-sizing: border-box;
 }
-footer .footer {
+footer .footer {background-color: #353535;
   display: flex;
   flex-flow: column;
   width: calc(100% - 50px);
   max-width: 1440px;
   transition: all 155ms ease-in-out;
+  padding: 21.75px 0px 22px 25px;
+  background-color: #353535;
 }
 footer .footer a {
   color: #fff;
@@ -572,7 +573,6 @@ footer .footer .footer_contact {
   top: -161px;
   box-sizing: border-box;
   padding: 161px 0 0 0;
-  width: 100;
 }
 .card_restaurants:nth-child(1) {
   background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -1465,7 +1465,6 @@ footer .footer .footer_contact {
     flex-flow: row;
     justify-content: center;
     box-sizing: border-box;
-    padding: 0;
     height: 114px;
   }
   footer .footer {
@@ -1480,6 +1479,7 @@ footer .footer .footer_contact {
     box-sizing: border-box;
     gap: 25px 6.51vw;
     padding: 25px 3.5vw 25px 10vw;
+    box-sizing: border-box;
   }
   footer .footer a {
     display: block;
@@ -1706,8 +1706,8 @@ footer .footer .footer_contact {
   }
   .main .pallette {
     background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
-    left -334px no-repeat;
-  background-size: 100%;
+      left -334px no-repeat;
+    background-size: 100%;
   }
   /****** --Media queries-- ******/
   .margin {
@@ -1835,7 +1835,7 @@ footer .footer .footer_contact {
     display: inline-flex;
     align-items: flex-end;
     position: relative;
-    padding: 64px 180px 30px 0px;
+    padding: 64px 180px 0px 0px;
   }
   footer .footer a {
     width: 190px;
