@@ -1,0 +1,277 @@
+/****** --Media queries-- ******/
+/***!! [--1440px--] ****/
+
+/***!! Clearing-inf:1440px ****/
+@media screen and (min-width: 1440px) {
+    .main {
+        .a_la_french {
+            background: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) -40px -469px
+                no-repeat;
+            background-size: 120%;
+        }
+        .la_note {
+            background: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg)
+                center no-repeat;
+            background-size: 100%;
+        }
+        .le_delice {
+            background: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+                center -356px no-repeat;
+            background-size: 100%;
+        }
+        .pallette {
+            background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+                center top no-repeat;
+            background-size: 110%;
+        }
+    }
+    /****** --Media queries-- ******/
+    // .margin {
+    // }
+    /****** [Header] ******/
+    .full-heading {
+        height: 96px;
+    }
+    .head {
+        &__logo {
+            position: relative;
+            width: 200px;
+            padding: 0 1px 0 0;
+        }
+    }
+    .head__return {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin-left: 24px;
+        top: 14px;
+        font-size: 1.2258em;
+        color: $color-logo-font;
+        align-self: flex-start;
+    }
+
+    /****** [ Accueil N°2 Presentation ] ******/
+    .presentation {
+        margin: 0;
+        a {
+            padding: 15px 21.5px 16px 21.5px;
+        }
+    }
+
+    .font_h1 {
+        @include font_presentation_h1;
+        margin: 30px 0px 1px 0px;
+        letter-spacing: -0.7px;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .font_h1_p {
+        margin: 30px 0 1px -2.5px;
+        letter-spacing: 0.0082px;
+    }
+    /*BUTTON*/
+
+    .local_style_gradient {
+        margin: 30px 0 28px -26px;
+    }
+
+    /****** [ Accueil N°3 Fonctionnement  ] ******/
+
+    .fonctionnement {
+        padding-top: 2px;
+        padding-bottom: 50px;
+    }
+    .font_h2_acceuil {
+        @include font_h2_acceuil;
+        margin: 48px 0 7px -0.5px;
+    }
+
+    .nav {
+        align-self: flex-start;
+        .nav_content:nth-child(1) i {
+            top: -1px;
+        }
+        .nav_content:nth-child(3) i {
+            left: 8px;
+        }
+    }
+
+    /****** [ Accueil N°3 Restaurants  ] ******/
+
+    /* SECTION-PRINCIAL*/
+
+    /* TITLE*/
+    .margin {
+        margin: 0 0px;
+        max-width: calc(1440px - 360px);
+        h2.font_h2_restaurants {
+            margin: 26px 0 29px 0;
+        }
+
+        .grid_restaurant {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 0px 0px 144px 0px;
+            margin: -0px 0 0 0;
+            gap: 50px 100px;
+        }
+
+        .card_restaurants {
+            max-width: 490px;
+            .new_card {
+                top: 13.25px;
+                right: 17.5px;
+            }
+
+            &:nth-child(1) {
+                background-size: cover;
+                background-position: center -105px;
+            }
+            &:nth-child(2) {
+                background-size: cover;
+                background-position: center -250px;
+            }
+            &:nth-child(3) {
+                background-size: cover;
+                background-position: center -104px;
+            }
+            &:nth-child(4) {
+                background-size: cover;
+                background-position: center -110px;
+            }
+        }
+    }
+    /* SECTION-CARD*/
+    .card_title {
+        margin: 0;
+        padding: 15.25px 0 0 20px;
+    }
+    .card_description {
+        margin: 0;
+        padding: 2px 0 0 20px;
+    }
+
+    /****** [Footer] ******/
+
+    footer {
+        width: calc(0px + 100%);
+        position: absolute;
+        height: 114px;
+        margin-top: -114px;
+
+        .footer {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: flex-end;
+            position: relative;
+            padding: 64px 180px 30px 0px;
+            a {
+                width: 190px;
+                height: 20px;
+                transition: all 1750ms;
+            }
+            > a {
+                position: absolute;
+                right: 25px;
+                top: 57px;
+            }
+        }
+    }
+
+    .footer_subscription {
+        > a:nth-child(1) {
+            left: 20px;
+
+            > i {
+                position: relative;
+                top: -1px;
+                left: -1px;
+                margin-left: 1px;
+            }
+        }
+        > a:nth-child(2) {
+            left: 15px;
+
+            > i {
+                position: relative;
+                top: -0.5px;
+                left: -3px;
+                margin-left: 2px;
+            }
+        }
+        .footer_contact {
+            > a:nth-child(1) {
+                margin-left: -17px;
+            }
+            > a:nth-child(2) {
+                margin-left: -23px;
+            }
+        }
+    }
+
+    /*** ----Restarants--- ***/
+    .main {
+        .pallette {
+            background: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+                left -334px no-repeat;
+            background-size: 100%;
+        }
+        .gourmet_menu {
+            position: relative;
+            padding-bottom: 112px;
+            /*titre-h1*/
+            &--title {
+                top: 54px;
+                width: 309px;
+                .like {
+                    top: -12px;
+                    margin-left: 12px;
+                }
+            }
+            .starter {
+                padding: 35px 0 40px 0;
+            }
+            .dessert {
+                margin-bottom: 41px;
+            }
+        }
+        .starter,
+        .main-course,
+        .dessert {
+            &_h2 {
+                margin: 0;
+            }
+            &_contener {
+                $border: 0px;
+                border-left: $border solid transparent;
+                border-right: $border solid transparent;
+                &_card {
+                    &--title {
+                        padding: 13px 48px 0 15px;
+                    }
+                    &--description {
+                        padding: 4px 0 0 15px;
+                    }
+                    &--price {
+                        @include card_menu-price;
+                        padding: 3.5px 0 0 22px;
+                        letter-spacing: -0.5px;
+                    }
+                }
+            }
+        }
+    }
+    .local_style_gradient2 {
+        flex-flow: column;
+        justify-content: center;
+        min-width: 146px;
+        padding: 15px 21.5px 16px 21.5px;
+    }
+}
+
+@media screen and (min-width: 1445px) {
+    .nav {
+        align-self: center;
+    }
+}
