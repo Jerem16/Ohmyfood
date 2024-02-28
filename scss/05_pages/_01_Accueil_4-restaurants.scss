@@ -80,7 +80,7 @@
 
         z-index: 9999;
     }
-
+    /* Position des images */
     &:nth-child(1) {
         background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         background-size: 102.5% 97.5%;
@@ -197,14 +197,13 @@
     -webkit-text-stroke: 1px transparent;
     animation: heart-stroke 1.5s backwards;
 }
-.luky {
+.lucky {
     transition: all 1.5s;
 }
-.luky:hover {
+.lucky:hover {
     .checked {
         display: block;
         position: absolute;
-        background-color: transparent;
         background: transparent;
         color: transparent;
         -webkit-background-clip: text;
@@ -222,7 +221,7 @@
     }
 }
 
-.luky:hover .checked {
+.lucky:hover .checked {
     -webkit-text-stroke: 1px transparent;
     animation: heart-stroke 2.05s forwards;
 

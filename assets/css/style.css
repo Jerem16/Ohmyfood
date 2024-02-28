@@ -38,7 +38,7 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 .like .fa-heart .x,
-.luky:hover .checked {
+.lucky:hover .checked {
     max-height: 21.5px;
     position: absolute;
     display: block;
@@ -781,10 +781,10 @@ footer .footer .footer_contact {
     -webkit-text-stroke: 1px transparent;
     animation: 1.5s backwards heart-stroke;
 }
-.luky {
+.lucky {
     transition: 1.5s;
 }
-.luky:hover .checked {
+.lucky:hover .checked {
     background: padding-box text;
     color: transparent;
     -webkit-background-clip: text;
@@ -793,12 +793,12 @@ footer .footer .footer_contact {
     -webkit-text-stroke: 1px transparent;
     animation: 2.05s forwards heart-stroke;
 }
-.luky:hover .unchecked:defined {
+.lucky:hover .unchecked:defined {
     -webkit-text-stroke: 1px transparent;
     animation: 50ms reverse backwards heart-stroke;
     z-index: -1;
 }
-.luky:hover .checked .x {
+.lucky:hover .checked .x {
     animation: 1.5s forwards heart;
     height: 21px;
 }
